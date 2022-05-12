@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gastronom',
-    'django_tables2'
 ]
 
 MIDDLEWARE = [
@@ -114,8 +113,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 # папка в системе, где все храняться статические файлы
 # адрес с помощью которого можно получить статические файлы
-STATIC_ROOT = BASE_DIR / 'gastronom/static'
-STATIC_URL = 'gastronom/static/'
+STATIC_ROOT = BASE_DIR / 'static'
+STATIC_URL = 'static/'
 
 # Media files
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -125,3 +124,42 @@ MEDIA_URL = 'media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# кэширование данных
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': BASE_DIR/'django_cache'
+    }
+}
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'main_form': {
+#             'format': '[{levelname}]{asctime}|{module}|PID:{process} TID:{thread} User: {username} |'
+#                       '|{message}',
+#             'style': '{'
+#         }
+#     },
+#     'handlers': {
+#         'file': {
+#             'level': 'INFO',
+#             'class': 'logging.FileHandler',
+#             'filename': BASE_DIR/'logs/log.log',
+#             'formatter': 'main_form'
+#         },
+#         'console': {
+#             'level': 'WARNING',
+#             'class': 'logging.StreamHandler',
+#             'formatter': 'main_form'
+#         }
+#     },
+#     'loggers': {
+#         'main': {
+#             'handlers': ['file', 'console'],
+#             'level': 'INFO'
+#         }
+#     }
+# }

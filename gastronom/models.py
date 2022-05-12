@@ -1,5 +1,6 @@
 # Create your models here.
 from django.db import models
+from django.urls import reverse
 from django.utils.text import slugify
 from unidecode import unidecode
 
@@ -52,7 +53,7 @@ class Product(models.Model):
         return super().save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return 'gastronom:products'
+        return reverse('gastronom:show_product', kwargs={'product_slug': self.slug})
 
     # замена названия объектов на названия товаров(строковое представления объекта)
 

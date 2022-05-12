@@ -37,7 +37,6 @@ class ContactAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('last_name',)}
 
 
-
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Vacancies, VacanciesAdmin)

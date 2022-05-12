@@ -11,12 +11,6 @@ from .utils import ContextMixin
 
 # для каждой вьюхи свой класс
 
-# class Index(SingleTableView):
-#     table_class = ProductTable
-#     queryset = Product.objects.all()
-#     template_name = 'gastronom/index.html'
-#     context_object_name = 'products'
-
 
 class Index(ContextMixin, ListView):
     model = Product
@@ -74,7 +68,8 @@ class ProductIndex(ContextMixin, ListView):
         return context
 
     def get_queryset(self):
-        queryset = ProductIndex.model.objects.all().order_by('name', 'price')
+        # Сделать жадный запрос чтобы запоминалось и ускорилось полученик категорий
+        queryset = ProductIndex.model.objects.all().order_by('name', 'price').select_related('category')
         if self.request.GET.keys():
             # Check the search keyword
             if self.request.GET.get('src') != '':
@@ -82,7 +77,8 @@ class ProductIndex(ContextMixin, ListView):
                 if keyword is not None:
                     # Set the query set based on search keyword
                     queryset = Product.objects.filter(
-                        Q(name__icontains=keyword.capitalize()) | Q(description__icontains=keyword.capitalize()))
+                        Q(name__icontains=keyword.capitalize()) | Q(
+                            description__icontains=keyword.capitalize())).select_related('category')
         return queryset
 
 
@@ -255,10 +251,6 @@ class ProductUpdateView(ContextMixin, UpdateView):
     # переменная на которую нужно смотреть
     slug_url_kwarg = 'product_slug'
     form_class = ProductForm
-
-    def get_success_url(self):
-        # перенаправление на главную страницу
-        return reverse('gastronom:products')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
