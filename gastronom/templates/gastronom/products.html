@@ -1,0 +1,115 @@
+{% extends 'gastronom/base.html' %}
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <h4 class="text-black">Категории</h4>
+            <ul style="column-count: 2;" class="list-unstyled">
+                {% if not slug%}
+                <li><a href="{% url 'gastronom:products'%}" style="pointer-events: none; text-decoration: none"
+                       class="text-black">Вся продукция</a>
+                    {% else %}
+                <li><a href="{% url 'gastronom:products'%}"
+                       class="text-black">Вся продукция</a>
+                    {% endif %}
+                    {% for category in categories %}
+                    {% if slug == category.slug %}
+                <li><a href="{% url 'gastronom:show_category' category.slug %}"
+                       style="pointer-events: none; text-decoration: none" class="text-black">{{category.name}}</a></li>
+                {% else %}
+                <li><a href="{% url 'gastronom:show_category' category.slug %}" class="text-black">{{category.name}}</a>
+                </li>
+                {% endif %}
+                {% empty %}
+                <h3 class="text-white">Пока нет категорий</h3>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="col-4">
+            {% if not slug%}
+            <form class="d-flex" method="get" action="">
+                {% csrf_token %}
+                <input class="form-control me-2" type="text" name="src" placeholder="Поиск" aria-label="Поиск">
+                <!--                <button class="btn btn-outline-dark " type="submit">Найти</button>-->
+            </form>
+            {% endif %}
+        </div>
+
+
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            {% for product in products %}
+            <div class="card-group">
+                <div class="card">
+                    <div class="scale"><a href="{% url 'gastronom:show_product' product.slug %}"><img
+                            class="card-img-top" src="{{product.image.url}}" alt="{{product.name|title}}"></a></div>
+                    <!-- Product details-->
+                    <div class="card-body flex-fill p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <a style="text-decoration: none; color: black"
+                               href="{% url 'gastronom:show_product' product.slug %}">
+                                <h5 class="fw-bolder">{{product.name|title }}</h5></a>
+                            <a class="link-secondary" href="{% url 'gastronom:show_category' product.category.slug %}">
+                                <span>{{ product.category.name }}</span> </a>
+                            <!-- Product price-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <span class="text-muted ">{{ product.price}} руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-dark mt-auto"
+                               href="{% url 'gastronom:show_product' product.slug %}">Читать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <h1>Ни одного продукта не найдено</h1>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% if page_obj.has_other_pages %}
+    <nav class='mt-5' aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link bg-dark text-white" href="?page={{page_obj.previous_page_number}}">Назад</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <span class="page-link bg-dark text-white-50">Назад</span>
+            </li>
+            {% endif %}
+
+            {% for page in paginator.page_range %}
+            {% if page_obj.number == page %}
+            <li class="page-item active">
+                <!--                     ? - дополнительный аргумент-->
+                <a class="page-link" href="?page={{page}}">{{page}}</a>
+            </li>
+            {% elif page >= page_obj.number|add:-2 and page <= page_obj.number|add:2 %}
+            <!--            фильтер добавления 2 или -2-->
+            <li class="page-item"><a class="page-link bg-dark text-white" href="?page={{page}}">{{page}}</a></li>
+            {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+            <li class="page-item">
+                <a class="page-link bg-dark text-white" href="?page={{page_obj.next_page_number}}">Далее</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <span class="page-link bg-dark text-white-50">Далее</span>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif%}
+</div>
+{% endblock content %}

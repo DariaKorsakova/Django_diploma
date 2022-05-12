@@ -1,0 +1,25 @@
+{% extends 'gastronom/base.html' %}
+
+{% block title %}{{title}}{% endblock title %}
+
+{% block content %}
+
+<div class="container bootdey">
+    <section class="panel">
+        <h2 class="pro-d-title">
+            {{contact.last_name}} {{contact.first_name}}
+        </h2>
+        <div class="m-bot15"><strong>Комментарий: </strong> <br>
+            <p class="pro-price"></p>{{contact.message}}
+        </div>
+        <p class="m-bot15"><b>Ответить на почту: {{contact.email}}</b></p>
+        <br>
+        <a href="{% url 'gastronom:comments' %}">
+            <button class="btn btn-outline-dark mt-auto" type="button"><i
+                    class="fa fa-shopping-cart"></i> Вернуться назад
+            </button>
+        </a>
+    </section>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends 'gastronom/base.html' %}
+
+{% block title %}{{title}}{% endblock title %}
+
+{% block section %}
+<h1 class="fw-light"> Удаление товара </h1>
+{% endblock section %}
+
+{% block content %}
+<div class="album py-5">
+    <div class="container flex-column align-items-center justify-content-center">
+        <h2 class="pro-d-title"> Вы уверены, что хотите удалить товар - {{product.name}} ?</h2>
+        <form class="needs-validation w-100 d-flex flex-column align-items-center"
+              method="post">
+            {% csrf_token %}
+            <div class="btn-group">
+                <a href="{% url 'gastronom:show_product' product.slug%}">
+                    <button class="btn btn-outline-dark mt-auto" type="button"> Нет, вернуться назад
+                    </button>
+                </a>
+                <button class="btn btn-outline-dark mt-auto" type="submit">Да, удалить товар</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

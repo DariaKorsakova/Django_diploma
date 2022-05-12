@@ -1,0 +1,33 @@
+{% extends 'gastronom/base.html' %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+<div class="title-in-page py-5">
+    {{title}}
+</div>
+
+{% block content %}
+<div class="album py-5 bg-light">
+    <div class="container d-flex justify-content-center">
+        <form method="post" class="w-50">
+            {% csrf_token %}
+            <h1 class="h3 mb-3 fw-normal text-center">{{title}}</h1>
+            <strong class="text-danger">{{form.non_field_errors}}</strong>
+            {% for widget in form %}
+            <div class="form-floating mb-3">
+                {{ widget }}
+                {{ widget.label_tag }}
+            </div>
+             {% if widget.errors %}
+                    <ol>
+                        {% for error in widget.errors %}
+                        <li><strong class="text-danger">{{ error }}</strong></li>
+                        {% endfor %}
+                    </ol>
+                {% endif %}
+            {% endfor %}
+            <button class="w-50 btn btn btn-outline-dark mt-auto" type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

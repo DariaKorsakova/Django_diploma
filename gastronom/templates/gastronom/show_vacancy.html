@@ -1,0 +1,38 @@
+{% extends 'gastronom/base.html' %}
+
+{% block title %}{{title}}{% endblock title %}
+
+{% block content %}
+
+
+<div class="container bootdey">
+    <section class="panel">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="pro-d-title">
+                    {{vacancies.name}}
+                </h2>
+                <p>{{vacancies.description}}</p>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="m-bot15"><strong>Условия:</strong>
+                            <p class="pro-price"> {{ vacancies.conditions }}</p></div>
+                        <br>
+                    </div>
+                    <div class="col-6">
+                        <div class="m-bot15"><strong>Требования: </strong>
+                            <p class="pro-price">{{vacancies.requirements}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{% url 'gastronom:vacancies' %}">
+            <button class="btn btn-outline-dark mt-auto" type="button"><i
+                    class="fa fa-shopping-cart"></i> Вернуться назад
+            </button>
+        </a>
+    </section>
+</div>
+
+
+{% endblock content %}

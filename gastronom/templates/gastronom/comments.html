@@ -1,0 +1,69 @@
+{% extends 'gastronom/base.html' %}
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        {% for c in comments %}
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body flex-fill p-4">
+                    <div class="text-center">
+                        <a style="text-decoration: none; color: black" href="{% url 'gastronom:show_comment' c.slug %}">
+                            <h5 class="fw-bolder">{{c.last_name|title }} {{c.first_name|title }}</h5></a>
+                        <p>{{c.message| truncatewords:5 }}</p>
+
+                    </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                        <a class="btn btn-outline-dark mt-auto"
+                           href="{% url 'gastronom:show_comment' c.slug %}">Читать полностью</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <h1>Ни одного комментария не найдено</h1>
+        {% endfor %}
+    </div>
+</div>
+
+{% if page_obj.has_other_pages %}
+<nav class='mt-5' aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+        <li class="page-item">
+            <a class="page-link bg-dark text-white" href="?page={{page_obj.previous_page_number}}">Назад</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <span class="page-link bg-dark text-white-50">Назад</span>
+        </li>
+        {% endif %}
+
+        {% for page in paginator.page_range %}
+        {% if page_obj.number == page %}
+        <li class="page-item active">
+            <!--                     ? - дополнительный аргумент-->
+            <a class="page-link" href="?page={{page}}">{{page}}</a>
+        </li>
+        {% elif page >= page_obj.number|add:-2 and page <= page_obj.number|add:2 %}
+        <!--            фильтер добавления 2 или -2-->
+        <li class="page-item"><a class="page-link bg-dark text-white" href="?page={{page}}">{{page}}</a></li>
+        {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+        <li class="page-item">
+            <a class="page-link bg-dark text-white" href="?page={{page_obj.next_page_number}}">Далее</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <span class="page-link bg-dark text-white-50">Далее</span>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif%}
+{% endblock content %}

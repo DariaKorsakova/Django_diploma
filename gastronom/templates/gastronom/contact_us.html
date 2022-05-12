@@ -1,0 +1,42 @@
+{% extends 'gastronom/base.html' %}
+
+{% block title %}{{title}}{% endblock title %}
+
+
+{% block content %}
+<div class="title-in-page py-5">
+    {{title}}
+</div>
+<div class="album py-5 bg-light">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <form class="needs-validation d-flex flex-column align-items-center" enctype="multipart/form-data"
+              method="post"> <!--            возможноть отправлять данные с учетом изображений-->
+            {% csrf_token %}
+            <!-- Токен — это в каком-то смысле электронный ключ. CSRF-token — это максимально простой и результативный способ защиты сайта от CSRF-мошенников. Он работает так: сервер создаёт случайный ключ (он же токен) и отправляет его браузеру клиента. -->
+
+            {% for widget in form %}
+            <div class="col-12">
+                {{ widget.label_tag }}
+                {{ widget }}
+            </div>
+            {% if widget.errors %}
+            <!--                маркированный список-->
+            <ol>
+                {% for error in widget.errors %}
+                <li><strong class="text-danger">{{error}}</strong></li>
+                {% endfor %}
+            </ol>
+            {% endif %}
+            {% endfor %}
+            <hr class="my-4">
+            <button class="w-100 btn btn-outline-dark mt-auto" type="submit" data-target="#modal">Отправить сообщение
+            </button>
+            <div class="modal fade" id="modal" tabindex="-1"></div>
+        </form>
+        <!--        В случае ошибки заполнения полей-->
+        {% if error %}
+        <p class="text-danger">{{ error }}</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

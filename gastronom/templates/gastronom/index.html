@@ -1,0 +1,13 @@
+{% extends 'gastronom/base.html' %}
+{% load static %}
+{% load django_tables2 %}
+
+<!-- расширение шаблонов -->
+<!-- block- тег шаблона,позволяющий вставлять HTML-код этого блока в другие шаблоны, расширяющие base.html -->
+{% block title %}{{title}}{% endblock title %}
+
+{% block content %}
+<!---->
+<img src="{% static 'gastronom/img/img2.jpg' %}">
+{% endblock content %}
+
