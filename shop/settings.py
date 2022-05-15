@@ -133,33 +133,40 @@ CACHES = {
     }
 }
 
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'main_form': {
-#             'format': '[{levelname}]{asctime}|{module}|PID:{process} TID:{thread} User: {username} |'
-#                       '|{message}',
-#             'style': '{'
-#         }
-#     },
-#     'handlers': {
-#         'file': {
-#             'level': 'INFO',
-#             'class': 'logging.FileHandler',
-#             'filename': BASE_DIR/'logs/log.log',
-#             'formatter': 'main_form'
-#         },
-#         'console': {
-#             'level': 'WARNING',
-#             'class': 'logging.StreamHandler',
-#             'formatter': 'main_form'
-#         }
-#     },
-#     'loggers': {
-#         'main': {
-#             'handlers': ['file', 'console'],
-#             'level': 'INFO'
-#         }
-#     }
-# }
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    #форматирует строки
+    'formatters': {
+        'main_form': {
+            'format': '[{levelname}] {asctime} | {module} | PID:{process} TID:{thread} | Username {username} '
+                      'UserIP: {userip} | Path: {path} | {message}',
+            #символ является ключевым
+            'style': '{'
+        }
+    },
+    # обработчик событий
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            # класс пишет логги в файлы
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR/'logs/log.log',
+            'formatter': 'main_form'
+        },
+        'console': {
+            'level': 'WARNING',
+            'class': 'logging.StreamHandler',
+            'formatter': 'main_form'
+        }
+    },
+    # хранит все события
+    'loggers': {
+        'main': {
+            'handlers': ['file', 'console'],
+            # будет отображать info(событие) warning(ни к чему серьезному) error(серьезно)
+            # critical(критично-все сломалось), но не дебаг
+            'level': 'INFO'
+        }
+    }
+}

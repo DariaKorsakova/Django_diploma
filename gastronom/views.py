@@ -1,38 +1,36 @@
+import logging
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView, LogoutView
-from django.db.models import Q
 from django.urls import reverse, reverse_lazy
 # подготовленные обобщенные вьюхи
 from django.views.generic import ListView, CreateView, DetailView, DeleteView, UpdateView
 from .models import Product, Category, Vacancies, Comments, VacancyConditions, VacancyRequirements
 from .form import ProductForm, LoginUserForm, CommentForm, VacancyForm
-from .utils import ContextMixin
-
+from .utils import ContextMixin, UserData
 
 # для каждой вьюхи свой класс
+logger = logging.getLogger('main')
 
 
-class Index(ContextMixin, ListView):
+class Index(ContextMixin, UserData, ListView):
     model = Product
     template_name = 'gastronom/index.html'
     context_object_name = 'products'
 
     def get_context_data(self, **kwargs):
+        logger.info('Getting index page', extra=self.get_user_data())
         context = super().get_context_data()
         user_context = self.get_user_context(title='Магазин ПАРОВОЗЪ-НН')
         context.update(user_context)
         return context
 
-    def get_queryset(self):
-        queryset = Index.model.objects.all()
-        return queryset
 
-
-class About(ContextMixin, ListView):
+class About(ContextMixin, UserData, ListView):
     model = Product
     template_name = 'gastronom/about.html'
 
     def get_context_data(self, **kwargs):
+        logger.info('Getting about page', extra=self.get_user_data())
         context = super().get_context_data()
         user_context = self.get_user_context(title='О компании')
         context.update(user_context)
@@ -50,7 +48,7 @@ class Contacts(ContextMixin, ListView):
         return context
 
 
-class ProductIndex(ContextMixin, ListView):
+class ProductIndex(ContextMixin, UserData, ListView):
     # c моделью с какой работает
     model = Product
     # с каким шаблоном
@@ -70,19 +68,26 @@ class ProductIndex(ContextMixin, ListView):
     def get_queryset(self):
         # Сделать жадный запрос чтобы запоминалось и ускорилось полученик категорий
         queryset = ProductIndex.model.objects.all().order_by('name', 'price').select_related('category')
+        logger.info('Getting products from df', extra=self.get_user_data())
         if self.request.GET.keys():
             # Check the search keyword
             if self.request.GET.get('src') != '':
                 keyword = self.request.GET.get('src')
                 if keyword is not None:
                     # Set the query set based on search keyword
-                    queryset = Product.objects.filter(name__icontains=keyword.capitalize()).select_related('category')
+                    queryset = Product.objects.filter(name__icontains=keyword.capitalize()).order_by(
+                        'name').select_related('category')
         return queryset
+
+    def get(self, request, *args, **kwargs):
+        keyword = self.request.GET.get('src')
+        if keyword is not None:
+            logger.info(f'Searching product {self.request.GET}  from df', extra=self.get_user_data())
+        return super().get(self, request, *args, **kwargs)
 
 
 # механизм проверки авторизован пользователь или нет
-class CreateProduct(ContextMixin, LoginRequiredMixin, CreateView):
-    # login_url = reverse_lazy('gastronom:login')
+class CreateProduct(ContextMixin, UserData, LoginRequiredMixin, CreateView):
     raise_exception = True
     # работает с формой
     form_class = ProductForm
@@ -100,8 +105,12 @@ class CreateProduct(ContextMixin, LoginRequiredMixin, CreateView):
         context.update(user_context)
         return context
 
+    def post(self, request, *args, **kwargs):
+        logger.info(f'Creating product {self.request.POST}', extra=self.get_user_data())
+        return super().post(self, request, *args, **kwargs)
 
-class ShowProduct(ContextMixin, DetailView):
+
+class ShowProduct(ContextMixin, UserData, DetailView):
     model = Product
     template_name = 'gastronom/show_product.html'
     # переменная на которую нужно смотреть
@@ -109,12 +118,14 @@ class ShowProduct(ContextMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        user_context = self.get_user_context(title=f"Детальная информация о {context['product']}")
+        product = context['product']
+        logger.info(f'Getting product page - {product}', extra=self.get_user_data())
+        user_context = self.get_user_context(title=f"Детальная информация о {product}")
         context.update(user_context)
         return context
 
 
-class ShowCategory(ContextMixin, ListView):
+class ShowCategory(ContextMixin, UserData, ListView):
     model = Product
     template_name = 'gastronom/products.html'
     context_object_name = 'products'
@@ -129,11 +140,14 @@ class ShowCategory(ContextMixin, ListView):
         return context
 
     def get_queryset(self):
-        queryset = ShowCategory.model.objects.filter(category__slug=self.kwargs['category_slug'])
+        cat = self.kwargs['category_slug']
+        logger.info(f'Getting products from special category - {cat}', extra=self.get_user_data())
+        queryset = ShowCategory.model.objects.filter(category__slug=self.kwargs['category_slug']).order_by(
+                        'name')
         return queryset
 
 
-class VacanciesIndex(ContextMixin, ListView):
+class VacanciesIndex(ContextMixin, UserData, ListView):
     model = Vacancies
     template_name = 'gastronom/vacancies.html'
     context_object_name = 'vacancies'
@@ -142,12 +156,13 @@ class VacanciesIndex(ContextMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
+        logger.info(f'Getting vacancies page ', extra=self.get_user_data())
         user_context = self.get_user_context(title='Вакансии')
         context.update(user_context)
         return context
 
 
-class ShowVacancy(ContextMixin, DetailView):
+class ShowVacancy(ContextMixin, UserData, DetailView):
     model = Vacancies
     template_name = 'gastronom/show_vacancy.html'
     # переменная на которую нужно смотреть
@@ -155,15 +170,17 @@ class ShowVacancy(ContextMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        conditions = VacancyConditions.objects.filter(vacancies__id=context['vacancies'].id)
-        requirements = VacancyRequirements.objects.filter(vacancies__id=context['vacancies'].id)
-        user_context = self.get_user_context(title=f"Детальная информация о вакансии - {context['vacancies']}",
+        vac = context['vacancies']
+        logger.info(f'Getting vacancies page - {vac} ', extra=self.get_user_data())
+        conditions = VacancyConditions.objects.filter(vacancies__id=vac.id)
+        requirements = VacancyRequirements.objects.filter(vacancies__id=vac.id)
+        user_context = self.get_user_context(title=f"Детальная информация о вакансии - {vac}",
                                              conditions=conditions, requirements=requirements)
         context.update(user_context)
         return context
 
 
-class CommentCreate(ContextMixin, CreateView):
+class CommentCreate(ContextMixin, UserData, CreateView):
     # работает с формой
     form_class = CommentForm
     # с каким шаблоном работает
@@ -180,13 +197,18 @@ class CommentCreate(ContextMixin, CreateView):
         context.update(user_context)
         return context
 
+    def post(self, request, *args, **kwargs):
+        logger.info(f'Creating comment {self.request.POST}', extra=self.get_user_data())
+        return super().post(self, request, *args, **kwargs)
 
-class LoginUser(ContextMixin, LoginView):
+
+class LoginUser(ContextMixin, UserData, LoginView):
     form_class = LoginUserForm
     template_name = 'gastronom/login.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        logger.info('Getting login page', extra=self.get_user_data())
         user_context = self.get_user_context(title='Авторизация для владельца магазина')
         context.update(user_context)
         return context
@@ -202,7 +224,7 @@ class LogoutUser(LogoutView):
     next_page = reverse_lazy('gastronom:index')
 
 
-class CommentsIndex(ContextMixin, LoginRequiredMixin, ListView):
+class CommentsIndex(ContextMixin, UserData, LoginRequiredMixin, ListView):
     raise_exception = True
     model = Comments
     template_name = 'gastronom/comments.html'
@@ -212,6 +234,7 @@ class CommentsIndex(ContextMixin, LoginRequiredMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
+        logger.info('Getting comments page', extra=self.get_user_data())
         user_context = self.get_user_context(title='Обратная связь')
         context.update(user_context)
         return context
@@ -230,7 +253,7 @@ class ShowComment(ContextMixin, LoginRequiredMixin, DetailView):
         return context
 
 
-class ProductDeleteView(ContextMixin, LoginRequiredMixin, DeleteView):
+class ProductDeleteView(ContextMixin, LoginRequiredMixin, UserData, DeleteView):
     model = Product
     template_name = 'gastronom/product_delete.html'
     # переменная на которую нужно смотреть
@@ -247,8 +270,12 @@ class ProductDeleteView(ContextMixin, LoginRequiredMixin, DeleteView):
         context.update(user_context)
         return context
 
+    def post(self, request, *args, **kwargs):
+        logger.info(f'Deleting product {self.request.POST}', extra=self.get_user_data())
+        return super().post(self, request, *args, **kwargs)
 
-class ProductUpdateView(ContextMixin, LoginRequiredMixin, UpdateView):
+
+class ProductUpdateView(ContextMixin, UserData, LoginRequiredMixin, UpdateView):
     model = Product
     template_name = 'gastronom/create.html'
     # переменная на которую нужно смотреть
@@ -263,8 +290,12 @@ class ProductUpdateView(ContextMixin, LoginRequiredMixin, UpdateView):
         context.update(user_context)
         return context
 
+    def post(self, request, *args, **kwargs):
+        logger.info(f'Updating product {self.request.POST}', extra=self.get_user_data())
+        return super().post(self, request, *args, **kwargs)
 
-class CreateVacancy(ContextMixin, LoginRequiredMixin, CreateView):
+
+class CreateVacancy(ContextMixin, UserData, LoginRequiredMixin, CreateView):
     raise_exception = True
     # работает с формой
     form_class = VacancyForm
@@ -282,8 +313,12 @@ class CreateVacancy(ContextMixin, LoginRequiredMixin, CreateView):
         context.update(user_context)
         return context
 
+    def post(self, request, *args, **kwargs):
+        logger.info(f'Creating vacancy {self.request.POST}', extra=self.get_user_data())
+        return super().post(self, request, *args, **kwargs)
 
-class VacancyDeleteView(ContextMixin, LoginRequiredMixin, DeleteView):
+
+class VacancyDeleteView(ContextMixin, UserData, LoginRequiredMixin, DeleteView):
     model = Vacancies
     template_name = 'gastronom/vacancy_delete.html'
     # переменная на которую нужно смотреть
@@ -300,8 +335,12 @@ class VacancyDeleteView(ContextMixin, LoginRequiredMixin, DeleteView):
         context.update(user_context)
         return context
 
+    def post(self, request, *args, **kwargs):
+        logger.info(f'Deleting vacancy {self.request.POST}', extra=self.get_user_data())
+        return super().post(self, request, *args, **kwargs)
 
-class VacancyUpdateView(ContextMixin, LoginRequiredMixin, UpdateView):
+
+class VacancyUpdateView(ContextMixin, UserData, LoginRequiredMixin, UpdateView):
     model = Vacancies
     template_name = 'gastronom/create.html'
     # переменная на которую нужно смотреть
@@ -315,3 +354,7 @@ class VacancyUpdateView(ContextMixin, LoginRequiredMixin, UpdateView):
                                              button='Добавить вакансию')
         context.update(user_context)
         return context
+
+    def post(self, request, *args, **kwargs):
+        logger.info(f'Updating vacancy {self.request.POST}', extra=self.get_user_data())
+        return super().post(self, request, *args, **kwargs)

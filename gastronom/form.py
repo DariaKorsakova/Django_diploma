@@ -106,6 +106,20 @@ class CommentForm(ModelForm):
             )
         }
 
+        def clean_first_name(self):
+            # получить проверенное значение
+            first_name = self.cleaned_data['first_name']
+            if len(first_name) < 1:
+                # вызов ошибки у name
+                self.add_error('name', 'Слишком короткое имя')
+            return first_name
+
+        def clean_message(self):
+            message = self.cleaned_data['message']
+            if len(message) < 5:
+                self.add_error('message', 'Слишком короткое сообщение. Сообщение должно содержать более 5 знаков!')
+            return message
+
 
 class VacancyForm(ModelForm):
     def __init__(self, *args, **kwargs):

@@ -1,0 +1,67 @@
+Getting products from df
+Getting products from df
+[INFO]2022-05-15 20:30:45,746|views|PID:15004 TID:19104||Getting products from df
+[INFO] 2022-05-15 20:42:11,744 | views | PID:19128 TID:3396 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 20:42:13,239 | views | PID:19128 TID:3396 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 20:42:37,906 | views | PID:19128 TID:3396 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 20:48:11,675 | views | PID:31952 TID:17324 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Post: <QueryDict: {'csrfmiddlewaretoken': ['EQNdIr4Dcq39cG465rFEQjpy654SAnVkDZ2n0J2qTcEIs5wwPp4CogeJBy0KQKaO'], 'first_name': ['Сергей'], 'last_name': ['Бубнов'], 'email': ['kover1998@bk.ru'], 'message': ['Прекрасный магазин, очень вкусный хлеб']}>| Creating comment
+[INFO] 2022-05-15 20:48:35,704 | views | PID:31952 TID:17324 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Post: <QueryDict: {'csrfmiddlewaretoken': ['MRfZ4MN19BAFCbbyQN4ITAllwHV12FwZL0u9m4LOQnbeSADYALtGrxaw1aRTi2Lt'], 'first_name': ['Сергей'], 'last_name': ['Иванов'], 'email': ['ff@d.ru'], 'message': ['Самый вкусный хлеб в городе\r\n']}>| Creating comment
+[INFO] 2022-05-15 21:01:58,407 | views | PID:17100 TID:25448 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:03:16,303 | views | PID:15308 TID:13480 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:03:46,648 | views | PID:15308 TID:13480 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:05:35,264 | views | PID:32100 TID:30504 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Creating comment <QueryDict: {'csrfmiddlewaretoken': ['hfhZfuZnnYhjqKafS8N6HWMPoOepnkgcgow9xMXa4KSSG9CFC6c4fTB0ThahDHvG'], 'first_name': ['Oksana'], 'last_name': ['Ivenko'], 'email': ['ko@ya.ru'], 'message': ['Super shop. Very good price']}>
+[INFO] 2022-05-15 21:09:09,630 | views | PID:24208 TID:23844 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 21:09:09,631 | views | PID:24208 TID:23844 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:09:27,117 | views | PID:24208 TID:23844 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['AoL6SaCGKkwJN4AjEblfbiauPR1ljjjozx0gasAtr67i3t2Jo9KdJfZFkkXdzGyS'], 'src': ['moloko']}>  from df
+[INFO] 2022-05-15 21:09:27,118 | views | PID:24208 TID:23844 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:11:09,315 | views | PID:15736 TID:23388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['cDXHuWrxjrxJUqVXgeknGRuC5eJWjbgEbMcRMepk0d8iaPnn0cJleOjNAHFOzyv8'], 'src': ['молоко']}>  from df
+[INFO] 2022-05-15 21:11:09,316 | views | PID:15736 TID:23388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:11:27,938 | views | PID:15736 TID:23388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['cDXHuWrxjrxJUqVXgeknGRuC5eJWjbgEbMcRMepk0d8iaPnn0cJleOjNAHFOzyv8'], 'src': ['молоко']}>  from df
+[INFO] 2022-05-15 21:11:27,939 | views | PID:15736 TID:23388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:11:49,993 | views | PID:24668 TID:29536 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['cDXHuWrxjrxJUqVXgeknGRuC5eJWjbgEbMcRMepk0d8iaPnn0cJleOjNAHFOzyv8'], 'src': ['молоко']}>  from df
+[INFO] 2022-05-15 21:11:49,994 | views | PID:24668 TID:29536 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:13:27,328 | views | PID:15828 TID:28276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 21:13:27,328 | views | PID:15828 TID:28276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:13:32,467 | views | PID:15828 TID:28276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['EoAuSb15Wh187KdH0APSni5RDUUumeUYDxPEatZSD3CHn9F7KyeQVfU28nQmCB9s'], 'src': ['молоко']}>  from df
+[INFO] 2022-05-15 21:13:32,468 | views | PID:15828 TID:28276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:18:18,231 | views | PID:2400 TID:16584 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/myaso | Getting products from special category - 
+[INFO] 2022-05-15 21:19:40,499 | views | PID:28376 TID:23468 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/ryba | Getting products from special category - ryba
+[INFO] 2022-05-15 21:29:19,104 | views | PID:10184 TID:10028 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/ryba | Getting products from special category - ryba
+[INFO] 2022-05-15 21:29:25,589 | views | PID:10184 TID:10028 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 21:29:25,590 | views | PID:10184 TID:10028 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:32:15,986 | views | PID:12760 TID:1664 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 21:32:15,986 | views | PID:12760 TID:1664 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:32:18,661 | views | PID:12760 TID:1664 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/myaso | Getting products from special category - myaso
+[INFO] 2022-05-15 21:32:23,558 | views | PID:12760 TID:1664 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/zamorozka | Getting products from special category - zamorozka
+[INFO] 2022-05-15 21:35:19,300 | views | PID:8860 TID:29528 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/zamorozka | Getting products from special category - zamorozka
+[INFO] 2022-05-15 21:36:14,289 | views | PID:24796 TID:29764 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-15 21:47:04,847 | views | PID:29728 TID:28044 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 21:47:04,847 | views | PID:29728 TID:28044 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 21:47:18,527 | views | PID:8560 TID:30412 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_product_info/vetchina-viazanka-stolichnaia-500g_38 | Getting product page - Ветчина Вязанка Столичная 500г
+[INFO] 2022-05-15 22:11:39,682 | views | PID:22920 TID:25624 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 22:11:39,682 | views | PID:22920 TID:25624 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:11:42,036 | views | PID:22920 TID:25624 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_product_info/vetchina-viazanka-stolichnaia-500g_38 | Getting product page - Ветчина Вязанка Столичная 500г
+[INFO] 2022-05-15 22:16:06,654 | views | PID:20824 TID:26944 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-15 22:16:07,710 | views | PID:20824 TID:26944 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-15 22:16:15,273 | views | PID:20824 TID:26944 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-15 22:17:09,781 | views | PID:20824 TID:26944 | Username admin UserIP: 127.0.0.1 | Path: /create_product | Creating product <QueryDict: {'csrfmiddlewaretoken': ['GKD69VVIrRGOeGApgAuzdvmEqAue2ZGmzAD4X8f0zLWC0XjwMnTbF5d1gk8hUts8'], 'category': ['9'], 'name': ['Молоко'], 'description': ['kllllllllllllllllllllllllllllllll'], 'price': ['39']}>
+[INFO] 2022-05-15 22:17:09,931 | views | PID:20824 TID:26944 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 22:17:09,937 | views | PID:20824 TID:26944 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:18:32,215 | views | PID:8508 TID:14452 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 22:18:32,215 | views | PID:8508 TID:14452 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:18:43,876 | views | PID:8508 TID:14452 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {}>  from df
+[INFO] 2022-05-15 22:18:43,880 | views | PID:8508 TID:14452 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:18:45,596 | views | PID:8508 TID:14452 | Username admin UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-05-15 22:19:07,173 | views | PID:21392 TID:13220 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/iogurt-fruktovyi-chudo-vishnia-chereshnia-24-270g_34 | Getting product page - Йогурт фруктовый Чудо Вишня-Черешня 2.4% 270г
+[INFO] 2022-05-15 22:19:27,803 | views | PID:21392 TID:13220 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:19:31,911 | views | PID:21392 TID:13220 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:19:53,695 | views | PID:21392 TID:13220 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['ImiKRlL5gX465JwyfBXT7dv7WO4BhqeSBciIFy5noRkUR0fFLomvzNmuMyIE9U0E'], 'src': ['молоко']}>  from df
+[INFO] 2022-05-15 22:19:53,701 | views | PID:21392 TID:13220 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:20:06,415 | views | PID:21392 TID:13220 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/moloko_61 | Getting product page - Молоко
+[INFO] 2022-05-15 22:23:55,923 | views | PID:860 TID:4612 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/moloko_61/update | Updating product <QueryDict: {'csrfmiddlewaretoken': ['ayjeo023MF24b5VYuehsrxxzPFYL7HiF3ojccdmlUziSXmE501G4T7oWFpCOZb4r'], 'category': ['9'], 'name': ['Молоко'], 'description': ['llllllllllllllllllllll'], 'image': [''], 'price': ['39.0']}>
+[INFO] 2022-05-15 22:23:55,944 | views | PID:860 TID:4612 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/moloko_62 | Getting product page - Молоко
+[INFO] 2022-05-15 22:24:11,493 | views | PID:860 TID:4612 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/moloko_62/delete | Deleting product <QueryDict: {'csrfmiddlewaretoken': ['SWO1kdJYyWV6sqRVC7caYdBaDdY92yx1LMOZ8q3gGQbUeHA28UBMqNsxtXCcU2jN']}>
+[INFO] 2022-05-15 22:24:11,504 | views | PID:860 TID:4612 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-15 22:25:59,888 | views | PID:10696 TID:12028 | Username admin UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-15 22:26:13,971 | views | PID:10696 TID:12028 | Username admin UserIP: 127.0.0.1 | Path: /show_vacancy_info/prodavets-prodovolstvennykh-tovarov_8 | Getting vacancies page - Продавец продовольственных товаров 
+[INFO] 2022-05-15 22:27:17,792 | views | PID:10696 TID:12028 | Username admin UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
