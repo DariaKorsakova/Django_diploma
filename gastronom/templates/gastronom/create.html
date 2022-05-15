@@ -3,7 +3,7 @@
 {% block title %}{{title}}{% endblock title %}
 
 {% block section %}
-<h1 class="fw-light"> Добавление товара</h1>
+<h1 class="fw-light"> {{title}}{{title}}</h1>
 {% endblock section %}
 
 {% block content %}
@@ -13,7 +13,9 @@
               method="post">
             <!--            возможноть отправлять данные с учетом изображений-->
             {% csrf_token %}
-            <!-- Токен — это в каком-то смысле электронный ключ. CSRF-token — это максимально простой и результативный способ защиты сайта от CSRF-мошенников. Он работает так: сервер создаёт случайный ключ (он же токен) и отправляет его браузеру клиента. -->
+            <!-- Токен — это в каком-то смысле электронный ключ. CSRF-token — это максимально простой и
+            результативный способ защиты сайта от CSRF-мошенников. Он работает так: сервер создаёт
+            случайный ключ (он же токен) и отправляет его браузеру клиента. -->
 
             {% for widget in form %}
             <div class="col-12">
@@ -21,7 +23,7 @@
                 {{ widget }}
             </div>
             {% if widget.errors %}
-            <!--                маркированный список-->
+            <!--маркированный список-->
             <ol>
                 {% for error in widget.errors %}
                 <li><strong class="text-danger">{{error}}</strong></li>
@@ -30,7 +32,7 @@
             {% endif %}
             {% endfor %}
             <hr class="my-4">
-            <button class="w-25 btn btn-dark btn-lg" type="submit">Добавить товар</button>
+            <button class="w-25 btn btn-dark btn-lg" type="submit">{{button}}</button>
         </form>
         <!--        В случае ошибки заполнения полей-->
         {% if error %}

@@ -81,3 +81,19 @@ body {
   width: 100%;
   height: 80px;
 }
+
+.imageBlock{
+    width:100%;
+}
+.imageBlock img{
+    width:100%;
+}
+
+dropdown-item:hover {
+background-color: grey;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+background-color: grey;
+}
+

@@ -3,22 +3,22 @@
 {% block title %}{{title}}{% endblock title %}
 
 {% block section %}
-<h1 class="fw-light"> Удаление товара </h1>
+<h1 class="fw-light">{{title}}</h1>
 {% endblock section %}
 
 {% block content %}
 <div class="album py-5">
     <div class="container flex-column align-items-center justify-content-center">
-        <h2 class="pro-d-title"> Вы уверены, что хотите удалить - {{product.name}} ?</h2>
+        <h2 class="pro-d-title"> Вы уверены, что хотите удалить - {{vacancies.name}} ?</h2>
         <form class="needs-validation w-100 d-flex flex-column align-items-center"
               method="post">
             {% csrf_token %}
             <div class="btn-group">
-                <a href="{% url 'gastronom:show_product' product.slug%}">
+                <a href="{% url 'gastronom:show_vacancy' vacancies.slug%}">
                     <button class="btn btn-outline-dark mt-auto" type="button"> Нет, вернуться назад
                     </button>
                 </a>
-                <button class="btn btn-outline-dark mt-auto" type="submit">Да, удалить товар</button>
+                <button class="btn btn-outline-dark mt-auto" type="submit">Да, удалить</button>
 
             </div>
         </form>

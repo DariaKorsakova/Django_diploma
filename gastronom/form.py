@@ -1,7 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import AuthenticationForm
-from django.forms import ModelForm, FileInput, TextInput, NumberInput, Select, Textarea, EmailInput, CharField
-from .models import Product, Contact
+from django.forms import ModelForm, FileInput, TextInput, NumberInput, Select, Textarea, EmailInput, CharField, \
+    PasswordInput, CheckboxSelectMultiple, ModelMultipleChoiceField, SelectMultiple
+from .models import Product, Comments, Vacancies, VacancyRequirements, VacancyConditions
 
 
 class ProductForm(ModelForm):
@@ -68,9 +69,9 @@ class ProductForm(ModelForm):
         return price
 
 
-class ContactForm(ModelForm):
+class CommentForm(ModelForm):
     def __init__(self, *args, **kwargs):
-        super(ContactForm, self).__init__(*args, **kwargs)
+        super(CommentForm, self).__init__(*args, **kwargs)
         self.fields['first_name'].label = 'Ваше имя'
         self.fields['last_name'].label = 'Ваша фамилия'
         self.fields['email'].label = 'Email'
@@ -80,7 +81,7 @@ class ContactForm(ModelForm):
 
     class Meta:
         # Определяем модель, на основе которой создаем форму
-        model = Contact
+        model = Comments
         # Поля, которые будем использовать для заполнения
         fields = ['first_name', 'last_name', 'email', 'message']
         widgets = {
@@ -106,6 +107,41 @@ class ContactForm(ModelForm):
         }
 
 
+class VacancyForm(ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(VacancyForm, self).__init__(*args, **kwargs)
+        # Обновление лейблов
+        self.fields['name'].label = 'Название вакансии'
+        self.fields['description'].label = 'Описание вакансии'
+        self.fields['conditions'].label = 'Условия'
+        self.fields['requirements'].label = 'Требования'
+        self.label_suffix = ''
+
+    class Meta:
+        model = Vacancies
+        fields = ['name', 'description', 'conditions', 'requirements']
+        widgets = {
+            'name': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Название вакансии'
+            }),
+            'description': Textarea(attrs={
+                'class': 'form-control',
+                'placeholder': 'Описание вакансии'
+            }),
+            'conditions': SelectMultiple(
+                attrs={
+                    'class': 'form-control',
+                    'placeholder': 'Условия'
+                }),
+            'requirements': SelectMultiple(
+                attrs={
+                    'class': 'form-control',
+                    'placeholder': 'Требования'
+                })
+        }
+
+
 class LoginUserForm(AuthenticationForm):
     # Создаем поля моделей
     username = CharField(
@@ -113,13 +149,15 @@ class LoginUserForm(AuthenticationForm):
         widget=TextInput(attrs={
             'class': 'form-control',
             'placeholder': 'Логин'
+
         })
     )
     password = CharField(
         label='Пароль',
-        widget=TextInput(attrs={
+        widget=PasswordInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Пароль'
+            'placeholder': 'Пароль',
+
         })
     )
 

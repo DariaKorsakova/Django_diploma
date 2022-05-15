@@ -8,9 +8,9 @@
             <div class="card">
                 <div class="card-body flex-fill p-4">
                     <div class="text-center">
-                        <a style="text-decoration: none; color: black" href="{% url 'gastronom:show_comment' c.slug %}">
+                        <a style="text-decoration: none; color: black" href="{% url 'gastronom:show_comment' c.pk %}">
                             <h5 class="fw-bolder">{{c.last_name|title }} {{c.first_name|title }}</h5></a>
-                        <p>{{c.message| truncatewords:5 }}</p>
+                        <p>{{c.message| truncatechars:50 }}</p>
 
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center">
                         <a class="btn btn-outline-dark mt-auto"
-                           href="{% url 'gastronom:show_comment' c.slug %}">Читать полностью</a>
+                           href="{% url 'gastronom:show_comment' c.pk %}">Читать полностью</a>
                     </div>
                 </div>
             </div>

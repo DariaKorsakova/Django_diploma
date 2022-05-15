@@ -1,7 +1,8 @@
 # Register your models here.
 from django.contrib import admin
 
-from .models import Product, Category, Vacancies, Contact
+from .models import Product, Category, Vacancies, Comments, VacancyConditions, VacancyRequirements
+
 
 # конфигурационный класс - настраивает админку
 
@@ -31,13 +32,14 @@ class VacanciesAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name', )}
 
 
-class ContactAdmin(admin.ModelAdmin):
+class CommentsAdmin(admin.ModelAdmin):
     list_display = ('id', 'last_name', 'first_name', 'message', 'email')
     list_display_links = ('id', 'message')
-    prepopulated_fields = {'slug': ('last_name',)}
 
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Vacancies, VacanciesAdmin)
-admin.site.register(Contact, ContactAdmin)
+admin.site.register(VacancyRequirements)
+admin.site.register(VacancyConditions)
+admin.site.register(Comments, CommentsAdmin)

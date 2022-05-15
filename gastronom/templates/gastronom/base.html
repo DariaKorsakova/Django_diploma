@@ -18,28 +18,29 @@
 <div class="bg-dark collapse" id="navbarHeader" style="">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6 py-4">
-                <h4 class="text-white text-center">Все категории</h4>
+            <div class="col-8 py-4">
+                <h4 class="text-white">Все категории</h4>
                 <ul class="list-unstyled" style="column-count: 2;">
                     {% for category in categories %}
                     {% if slug == category.slug %}
-                    <li class="nav-link text-center"><a href="{% url 'gastronom:show_category' category.slug %}"
-                                                        style="pointer-events: none; text-decoration: none"
-                                                        class="text-white">{{category.name}}</a>
+                    <li class="nav-link"><a href="{% url 'gastronom:show_category' category.slug %}"
+                                            style="pointer-events: none; text-decoration: none"
+                                            class="text-white">{{category.name}}</a>
                     </li>
                     {% else %}
-                    <li class="nav-link text-center"><a href="{% url 'gastronom:show_category' category.slug %}"
-                                                        class="text-white">{{category.name}}</a>
+                    <li class="nav-link"><a href="{% url 'gastronom:show_category' category.slug %}"
+                                            class="text-white">{{category.name}}</a>
                     </li>
                     {% endif %}
                     {% empty %}
-                        <h3 class="text-white">Пока нет категорий</h3>
+                    <h3 class="text-white">Пока нет категорий</h3>
                     {% endfor %}
                 </ul>
             </div>
             <div class="col-4 py-4">
                 <h4 class="text-white">Навигация</h4>
                 <ul class="list-unstyled">
+                    <li class="nav-link"><a class="text-white" href="{% url 'gastronom:index' %}">Главная</a>
                     <li class="nav-link"><a class="text-white" href="{% url 'gastronom:about' %}">О Компании</a>
                     </li>
                     <li class="nav-link"><a class="text-white" href="{% url 'gastronom:products' %}">Продукция</a>
@@ -62,15 +63,13 @@
         <div class="d-flex justify-content-end">
             {% if request.user.is_authenticated %}
             <a class="navbar-brand" href="{% url 'gastronom:comments' %}"><strong>Сообщения обратной связи</strong></a>
+            <a class="navbar-brand" href="{% url 'gastronom:create_vacancy' %}"><strong>Добавить
+                вакансию</strong></a>
             <a class="navbar-brand" href="{% url 'gastronom:create_product' %}"><strong>Добавить
                 продукт</strong></a>
             <strong class="navbar-brand"> | </strong>
             <a href="{% url 'gastronom:logout' %}" class="navbar-brand">
                 <strong>Выйти</strong></a>
-            {% else %}
-            <strong class="navbar-brand"> | </strong>
-            <a href="{% url 'gastronom:login' %}" class="navbar-brand">
-                <strong>Войти</strong></a>
             {% endif %}
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
@@ -92,7 +91,7 @@
 </header>
 
 <main>
-    <section class="py-5 text-center container">
+    <section class="container py-5 text-center ">
         {% block content %}{% endblock content %}
     </section>
 </main>
@@ -124,4 +123,5 @@
   $('.carousel').carousel({
    interval: 1000
   });
+
 </script>

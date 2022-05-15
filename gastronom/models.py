@@ -61,17 +61,44 @@ class Product(models.Model):
         return self.name
 
 
+class VacancyConditions(models.Model):
+    objects = models.Manager()
+    name = models.TextField('Условие', db_index=True)
+
+    class Meta:
+        verbose_name = 'Условие'
+        verbose_name_plural = "Условия"
+
+    def __str__(self):
+        return self.name
+
+
+class VacancyRequirements(models.Model):
+    objects = models.Manager()
+    name = models.TextField('Требование', db_index=True)
+
+    class Meta:
+        verbose_name = 'Требование'
+        verbose_name_plural = "Требования"
+
+    def __str__(self):
+        return self.name
+
+
 class Vacancies(models.Model):
     objects = models.Manager()
-    name = models.CharField('Название', max_length=20, db_index=True)
+    name = models.CharField('Название', max_length=40, db_index=True)
     description = models.TextField('Описание', db_index=True)
-    conditions = models.TextField('Условия', db_index=True)
-    requirements = models.TextField('Требования', db_index=True)
+    conditions = models.ManyToManyField(VacancyConditions, verbose_name='Условия')
+    requirements = models.ManyToManyField(VacancyRequirements, verbose_name='Требования')
     slug = models.SlugField('URL вакансии', max_length=50, unique=True, db_index=True)
 
     class Meta:
         verbose_name = 'Вакансия'
         verbose_name_plural = "Вакансии"
+
+    def get_absolute_url(self):
+        return reverse('gastronom:show_vacancy', kwargs={'vacancy_slug': self.slug})
 
     def save(self, *args, **kwargs):
         last_obj = Vacancies.objects.all().order_by('id').last()
@@ -88,28 +115,18 @@ class Vacancies(models.Model):
         return self.name
 
 
-class Contact(models.Model):
+class Comments(models.Model):
     objects = models.Manager()
     first_name = models.CharField('Имя', max_length=200)
     last_name = models.CharField('Фамилия', max_length=200)
     email = models.EmailField('Email', max_length=200)
     message = models.TextField('Сообщение', max_length=1000)
-    slug = models.SlugField('URL вакансии', max_length=50, unique=True, db_index=True)
+    created_date = models.DateTimeField('Время публикации', auto_now=True)
 
     class Meta:
         verbose_name = 'Сообщение обратной связи'
         verbose_name_plural = "Сообщения обратной связи"
-
-    def save(self, *args, **kwargs):
-        last_obj = Contact.objects.all().order_by('id').last()
-        if last_obj:
-            last_pk = last_obj.pk + 1
-        else:
-            last_pk = 1
-        string = unidecode(str(self.last_name) + '_' + str(last_pk))
-        # слагификация
-        self.slug = slugify(string)
-        return super().save(*args, **kwargs)
+        ordering = ('-created_date', )
 
     def __str__(self):
         return self.email

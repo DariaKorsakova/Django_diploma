@@ -4,8 +4,8 @@ from django.db.models import Q
 from django.urls import reverse, reverse_lazy
 # подготовленные обобщенные вьюхи
 from django.views.generic import ListView, CreateView, DetailView, DeleteView, UpdateView
-from .models import Product, Category, Vacancies, Contact
-from .form import ProductForm, ContactForm, LoginUserForm
+from .models import Product, Category, Vacancies, Comments, VacancyConditions, VacancyRequirements
+from .form import ProductForm, LoginUserForm, CommentForm, VacancyForm
 from .utils import ContextMixin
 
 
@@ -76,19 +76,18 @@ class ProductIndex(ContextMixin, ListView):
                 keyword = self.request.GET.get('src')
                 if keyword is not None:
                     # Set the query set based on search keyword
-                    queryset = Product.objects.filter(
-                        Q(name__icontains=keyword.capitalize()) | Q(
-                            description__icontains=keyword.capitalize())).select_related('category')
+                    queryset = Product.objects.filter(name__icontains=keyword.capitalize()).select_related('category')
         return queryset
 
 
 # механизм проверки авторизован пользователь или нет
 class CreateProduct(ContextMixin, LoginRequiredMixin, CreateView):
-    login_url = reverse_lazy('gastronom:login')
+    # login_url = reverse_lazy('gastronom:login')
+    raise_exception = True
     # работает с формой
     form_class = ProductForm
     # с каким шаблоном работает
-    template_name = 'gastronom/create_product.html'
+    template_name = 'gastronom/create.html'
 
     def get_success_url(self):
         # перенаправление на главную страницу
@@ -97,7 +96,7 @@ class CreateProduct(ContextMixin, LoginRequiredMixin, CreateView):
     def get_context_data(self, **kwargs):
         # у родителя выполнить, чтобы заполнить контекст
         context = super().get_context_data(**kwargs)
-        user_context = self.get_user_context(title='Добавление товара')
+        user_context = self.get_user_context(title='Добавление товара', button='Добавить товар')
         context.update(user_context)
         return context
 
@@ -125,7 +124,7 @@ class ShowCategory(ContextMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         cat = Category.objects.get(slug=self.kwargs['category_slug'])
-        user_context = self.get_user_context(title=f"Категория: {cat.name}", slug=cat.slug)
+        user_context = self.get_user_context(title=f"Категория: {cat.name}", slug=cat.slug, cat=cat.name)
         context.update(user_context)
         return context
 
@@ -156,16 +155,19 @@ class ShowVacancy(ContextMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        user_context = self.get_user_context(title=f"Детальная информация о вакансии - {context['vacancies']}")
+        conditions = VacancyConditions.objects.filter(vacancies__id=context['vacancies'].id)
+        requirements = VacancyRequirements.objects.filter(vacancies__id=context['vacancies'].id)
+        user_context = self.get_user_context(title=f"Детальная информация о вакансии - {context['vacancies']}",
+                                             conditions=conditions, requirements=requirements)
         context.update(user_context)
         return context
 
 
-class ContactCreate(ContextMixin, CreateView):
+class CommentCreate(ContextMixin, CreateView):
     # работает с формой
-    form_class = ContactForm
+    form_class = CommentForm
     # с каким шаблоном работает
-    template_name = 'gastronom/contact_us.html'
+    template_name = 'gastronom/create.html'
 
     def get_success_url(self):
         # перенаправление на главную страницу
@@ -174,7 +176,7 @@ class ContactCreate(ContextMixin, CreateView):
     def get_context_data(self, **kwargs):
         # у родителя выполнить, чтобы заполнить контекст
         context = super().get_context_data(**kwargs)
-        user_context = self.get_user_context(title='Обратная связь')
+        user_context = self.get_user_context(title='Обратная связь', button='Отправить сообщение')
         context.update(user_context)
         return context
 
@@ -201,8 +203,8 @@ class LogoutUser(LogoutView):
 
 
 class CommentsIndex(ContextMixin, LoginRequiredMixin, ListView):
-    login_url = reverse_lazy('gastronom:login')
-    model = Contact
+    raise_exception = True
+    model = Comments
     template_name = 'gastronom/comments.html'
     context_object_name = 'comments'
     paginate_by = 3
@@ -215,11 +217,11 @@ class CommentsIndex(ContextMixin, LoginRequiredMixin, ListView):
         return context
 
 
-class ShowComment(ContextMixin, DetailView):
-    model = Contact
+class ShowComment(ContextMixin, LoginRequiredMixin, DetailView):
+    model = Comments
     template_name = 'gastronom/show_comment.html'
     # переменная на которую нужно смотреть
-    slug_url_kwarg = 'comment_slug'
+    raise_exception = True
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
@@ -228,11 +230,12 @@ class ShowComment(ContextMixin, DetailView):
         return context
 
 
-class ProductDeleteView(ContextMixin, DeleteView):
+class ProductDeleteView(ContextMixin, LoginRequiredMixin, DeleteView):
     model = Product
     template_name = 'gastronom/product_delete.html'
     # переменная на которую нужно смотреть
     slug_url_kwarg = 'product_slug'
+    raise_exception = True
 
     def get_success_url(self):
         # перенаправление на главную страницу
@@ -245,15 +248,70 @@ class ProductDeleteView(ContextMixin, DeleteView):
         return context
 
 
-class ProductUpdateView(ContextMixin, UpdateView):
+class ProductUpdateView(ContextMixin, LoginRequiredMixin, UpdateView):
     model = Product
-    template_name = 'gastronom/create_product.html'
+    template_name = 'gastronom/create.html'
     # переменная на которую нужно смотреть
     slug_url_kwarg = 'product_slug'
     form_class = ProductForm
+    raise_exception = True
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        user_context = self.get_user_context(title=f"Изменение продукта -  {context['product']}")
+        user_context = self.get_user_context(title=f"Изменение продукта -  {context['product']}",
+                                             button='Добавить товар')
+        context.update(user_context)
+        return context
+
+
+class CreateVacancy(ContextMixin, LoginRequiredMixin, CreateView):
+    raise_exception = True
+    # работает с формой
+    form_class = VacancyForm
+    # с каким шаблоном работает
+    template_name = 'gastronom/create.html'
+
+    def get_success_url(self):
+        # перенаправление на главную страницу
+        return reverse('gastronom:vacancies')
+
+    def get_context_data(self, **kwargs):
+        # у родителя выполнить, чтобы заполнить контекст
+        context = super().get_context_data(**kwargs)
+        user_context = self.get_user_context(title='Добавление вакансии', button='Добавить вакансию')
+        context.update(user_context)
+        return context
+
+
+class VacancyDeleteView(ContextMixin, LoginRequiredMixin, DeleteView):
+    model = Vacancies
+    template_name = 'gastronom/vacancy_delete.html'
+    # переменная на которую нужно смотреть
+    slug_url_kwarg = 'vacancy_slug'
+    raise_exception = True
+
+    def get_success_url(self):
+        # перенаправление на главную страницу
+        return reverse('gastronom:vacancies')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data()
+        user_context = self.get_user_context(title=f"Удаление {context['vacancies']}")
+        context.update(user_context)
+        return context
+
+
+class VacancyUpdateView(ContextMixin, LoginRequiredMixin, UpdateView):
+    model = Vacancies
+    template_name = 'gastronom/create.html'
+    # переменная на которую нужно смотреть
+    slug_url_kwarg = 'vacancy_slug'
+    form_class = VacancyForm
+    raise_exception = True
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data()
+        user_context = self.get_user_context(title=f"Изменение вакансии -  {context['vacancies']}",
+                                             button='Добавить вакансию')
         context.update(user_context)
         return context
