@@ -1,6 +1,5 @@
 from django.urls import path
 
-
 from . import views
 
 # views.ProductIndex.as_view() превращение класса в функцию
@@ -27,4 +26,3 @@ urlpatterns = [
     path('show_vacancy_info/<slug:vacancy_slug>/update', views.VacancyUpdateView.as_view(), name='vacancy_update'),
 
 ]
-

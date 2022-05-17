@@ -1,6 +1,5 @@
 from .models import Category
 from django.core.cache import cache
-from django.http import request
 
 
 # миксин- класс который дополнительно примешивается к основному классу. Разгрузить от повторяющегося кода.

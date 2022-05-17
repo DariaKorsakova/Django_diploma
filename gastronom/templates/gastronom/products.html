@@ -63,12 +63,12 @@
                     </div>
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <a class="link-secondary"
-                               href="{% url 'gastronom:show_category' product.category.slug %}">
-                                <span>{{ product.category.name }}</span> </a>
-                            <!-- Product price-->
-                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                <span class="text-muted ">{{ product.price}} руб.</span>
-                            </div>
+                           href="{% url 'gastronom:show_category' product.category.slug %}">
+                            <span>{{ product.category.name }}</span> </a>
+                        <!-- Product price-->
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                            <span class="text-muted ">{{ product.price}} руб.</span>
+                        </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
@@ -101,7 +101,7 @@
             {% for page in paginator.page_range %}
             {% if page_obj.number == page %}
             <li class="page-item active">
-                <!--                     ? - дополнительный аргумент-->
+                <!-- ? - дополнительный аргумент-->
                 <a class="page-link" href="?page={{page}}">{{page}}</a>
             </li>
             {% elif page >= page_obj.number|add:-2 and page <= page_obj.number|add:2 %}

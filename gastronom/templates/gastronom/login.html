@@ -18,13 +18,13 @@
                 {{ widget }}
                 {{ widget.label_tag }}
             </div>
-             {% if widget.errors %}
-                    <ol>
-                        {% for error in widget.errors %}
-                        <li><strong class="text-danger">{{ error }}</strong></li>
-                        {% endfor %}
-                    </ol>
-                {% endif %}
+            {% if widget.errors %}
+            <ol>
+                {% for error in widget.errors %}
+                <li><strong class="text-danger">{{ error }}</strong></li>
+                {% endfor %}
+            </ol>
+            {% endif %}
             {% endfor %}
             <button class="w-50 btn btn btn-outline-dark mt-auto" type="submit">Войти</button>
         </form>

@@ -126,7 +126,7 @@ class Comments(models.Model):
     class Meta:
         verbose_name = 'Сообщение обратной связи'
         verbose_name_plural = "Сообщения обратной связи"
-        ordering = ('-created_date', )
+        ordering = ('-created_date',)
 
     def __str__(self):
         return self.email

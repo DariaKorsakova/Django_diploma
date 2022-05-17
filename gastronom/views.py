@@ -37,12 +37,13 @@ class About(ContextMixin, UserData, ListView):
         return context
 
 
-class Contacts(ContextMixin, ListView):
+class Contacts(ContextMixin, UserData, ListView):
     model = Product
     template_name = 'gastronom/contacts.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
+        logger.info('Getting contacts page', extra=self.get_user_data())
         user_context = self.get_user_context(title='Контакты')
         context.update(user_context)
         return context
@@ -63,6 +64,7 @@ class ProductIndex(ContextMixin, UserData, ListView):
         context = super().get_context_data()
         user_context = self.get_user_context(title='Доступные товары')
         context.update(user_context)
+        print(context)
         return context
 
     def get_queryset(self):
@@ -143,7 +145,7 @@ class ShowCategory(ContextMixin, UserData, ListView):
         cat = self.kwargs['category_slug']
         logger.info(f'Getting products from special category - {cat}', extra=self.get_user_data())
         queryset = ShowCategory.model.objects.filter(category__slug=self.kwargs['category_slug']).order_by(
-                        'name')
+            'name')
         return queryset
 
 
@@ -261,7 +263,6 @@ class ProductDeleteView(ContextMixin, LoginRequiredMixin, UserData, DeleteView):
     raise_exception = True
 
     def get_success_url(self):
-        # перенаправление на главную страницу
         return reverse('gastronom:products')
 
     def get_context_data(self, **kwargs):

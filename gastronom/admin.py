@@ -15,21 +15,21 @@ class ProductAdmin(admin.ModelAdmin):
     # поиск по
     search_fields = ('name', 'description', 'price')
     # slug привязывается к названию- ставится запятая чтобы сделать кортеж
-    prepopulated_fields = {'slug': ('name', )}
+    prepopulated_fields = {'slug': ('name',)}
 
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'slug')
     list_display_links = ('id', 'name')
     search_fields = ('name', 'slug')
-    prepopulated_fields = {'slug': ('name', )}
+    prepopulated_fields = {'slug': ('name',)}
 
 
 class VacanciesAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'slug')
     list_display_links = ('id', 'name')
     search_fields = ('name', 'slug')
-    prepopulated_fields = {'slug': ('name', )}
+    prepopulated_fields = {'slug': ('name',)}
 
 
 class CommentsAdmin(admin.ModelAdmin):

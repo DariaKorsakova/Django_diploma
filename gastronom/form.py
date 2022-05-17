@@ -1,8 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import AuthenticationForm
 from django.forms import ModelForm, FileInput, TextInput, NumberInput, Select, Textarea, EmailInput, CharField, \
-    PasswordInput, CheckboxSelectMultiple, ModelMultipleChoiceField, SelectMultiple
-from .models import Product, Comments, Vacancies, VacancyRequirements, VacancyConditions
+    PasswordInput, SelectMultiple
+from .models import Product, Comments, Vacancies
 
 
 class ProductForm(ModelForm):
@@ -54,6 +54,8 @@ class ProductForm(ModelForm):
         if len(name) < 4:
             # вызов ошибки у name
             self.add_error('name', 'Слишком короткое имя. Название должно содержать более 4 знаков!')
+        if not name[0].isupper():
+            self.add_error("name", "Должно начинаться с большой буквы")
         return name
 
     def clean_description(self):
@@ -106,19 +108,28 @@ class CommentForm(ModelForm):
             )
         }
 
-        def clean_first_name(self):
-            # получить проверенное значение
-            first_name = self.cleaned_data['first_name']
-            if len(first_name) < 1:
-                # вызов ошибки у name
-                self.add_error('name', 'Слишком короткое имя')
-            return first_name
+    def clean_first_name(self):
+        # получить проверенное значение
+        first_name = self.cleaned_data['first_name']
+        if len(first_name) < 2:
+            # вызов ошибки у name
+            self.add_error('first_name', 'Слишком короткое имя')
+        if not first_name[0].isupper():
+            self.add_error("first_name", "Должно начинаться с большой буквы")
+        return first_name
 
-        def clean_message(self):
-            message = self.cleaned_data['message']
-            if len(message) < 5:
-                self.add_error('message', 'Слишком короткое сообщение. Сообщение должно содержать более 5 знаков!')
-            return message
+    def clean_last_name(self):
+        # получить проверенное значение
+        last_name = self.cleaned_data['last_name']
+        if not last_name[0].isupper():
+            self.add_error("last_name", "Должно начинаться с большой буквы")
+        return last_name
+
+    def clean_message(self):
+        message = self.cleaned_data['message']
+        if len(message) < 5:
+            self.add_error('message', 'Слишком короткое сообщение. Сообщение должно содержать более 5 знаков!')
+        return message
 
 
 class VacancyForm(ModelForm):
@@ -154,6 +165,22 @@ class VacancyForm(ModelForm):
                     'placeholder': 'Требования'
                 })
         }
+
+    def clean_name(self):
+        name = self.cleaned_data['name']
+        if len(name) < 4:
+            self.add_error('name', 'Слишком короткое название')
+        if not name[0].isupper():
+            self.add_error("name", "Должно начинаться с большой буквы")
+        return name
+
+    def clean_description(self):
+        description = self.cleaned_data['description']
+        if len(description) < 4:
+            self.add_error('description', 'Слишком короткое описание')
+        if not description[0].isupper():
+            self.add_error("description", "Должно начинаться с большой буквы")
+        return description
 
 
 class LoginUserForm(AuthenticationForm):

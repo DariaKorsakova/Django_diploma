@@ -65,3 +65,283 @@ Getting products from df
 [INFO] 2022-05-15 22:25:59,888 | views | PID:10696 TID:12028 | Username admin UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
 [INFO] 2022-05-15 22:26:13,971 | views | PID:10696 TID:12028 | Username admin UserIP: 127.0.0.1 | Path: /show_vacancy_info/prodavets-prodovolstvennykh-tovarov_8 | Getting vacancies page - Продавец продовольственных товаров 
 [INFO] 2022-05-15 22:27:17,792 | views | PID:10696 TID:12028 | Username admin UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-16 12:03:32,542 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-16 12:03:43,228 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-16 12:03:51,447 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-16 12:04:02,096 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-16 12:04:29,689 | views | PID:22580 TID:17648 | Username admin UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-05-16 12:04:31,992 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /show_category/zamorozka | Getting products from special category - zamorozka
+[INFO] 2022-05-16 12:04:33,924 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/blinchiki-morozko-s-miasom_27 | Getting product page - Блинчики Морозко с мясом
+[INFO] 2022-05-16 12:04:39,762 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-16 12:04:49,069 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-16 12:04:51,270 | views | PID:22580 TID:12008 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-16 12:04:55,743 | views | PID:22580 TID:12008 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-16 12:04:56,750 | views | PID:22580 TID:12008 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-16 12:05:06,689 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-16 12:05:22,093 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-16 12:05:24,734 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-16 12:05:26,635 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-16 12:05:39,840 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-16 12:05:42,173 | views | PID:22580 TID:12008 | Username admin UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-16 18:22:24,468 | views | PID:19764 TID:28928 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:44:28,256 | views | PID:24920 TID:30972 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:51:21,833 | views | PID:29400 TID:25364 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:51:30,347 | views | PID:30996 TID:23752 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:52:22,818 | views | PID:25816 TID:31944 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 13:52:22,840 | views | PID:25816 TID:31944 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:52:22,850 | views | PID:25816 TID:31944 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 13:56:06,639 | views | PID:860 TID:31132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 13:56:06,673 | views | PID:860 TID:31132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:56:06,808 | views | PID:860 TID:31132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 13:56:06,823 | views | PID:860 TID:31132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 13:56:31,167 | views | PID:27912 TID:24588 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 13:56:31,215 | views | PID:27912 TID:24588 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:56:31,357 | views | PID:27912 TID:24588 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 13:56:31,372 | views | PID:27912 TID:24588 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 13:56:46,935 | views | PID:23336 TID:8232 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 13:56:46,977 | views | PID:23336 TID:8232 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 13:56:47,108 | views | PID:23336 TID:8232 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 13:56:47,123 | views | PID:23336 TID:8232 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:01:47,701 | views | PID:21080 TID:27820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:01:47,735 | views | PID:21080 TID:27820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Creating comment <QueryDict: {'first_name': ['Bob'], 'last_name': ['Patterson'], 'email': ['k123@bk.ru'], 'message': ['Good shop']}>
+[INFO] 2022-05-17 14:01:47,740 | views | PID:21080 TID:27820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:01:47,876 | views | PID:21080 TID:27820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:01:47,891 | views | PID:21080 TID:27820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:01:58,266 | views | PID:1816 TID:13328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:01:58,301 | views | PID:1816 TID:13328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:01:58,439 | views | PID:1816 TID:13328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:01:58,451 | views | PID:1816 TID:13328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:02:07,609 | views | PID:21260 TID:20848 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:02:07,649 | views | PID:21260 TID:20848 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:02:07,783 | views | PID:21260 TID:20848 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:02:07,799 | views | PID:21260 TID:20848 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:06:58,965 | views | PID:1544 TID:3820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:06:58,996 | views | PID:1544 TID:3820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:06:59,011 | views | PID:1544 TID:3820 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:17:26,568 | views | PID:22344 TID:2720 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:17:26,599 | views | PID:22344 TID:2720 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:17:26,599 | views | PID:22344 TID:2720 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:17:26,615 | views | PID:22344 TID:2720 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:17:26,631 | views | PID:22344 TID:2720 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:17:36,868 | views | PID:6864 TID:31420 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:17:36,914 | views | PID:6864 TID:31420 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:17:36,924 | views | PID:6864 TID:31420 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:17:36,939 | views | PID:6864 TID:31420 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:17:36,953 | views | PID:6864 TID:31420 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:21:05,814 | views | PID:10948 TID:14268 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:21:08,716 | views | PID:10948 TID:14268 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:21:10,492 | views | PID:10948 TID:14268 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:24:36,312 | views | PID:20124 TID:15344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:24:36,350 | views | PID:20124 TID:15344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:24:36,350 | views | PID:20124 TID:15344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:24:36,366 | views | PID:20124 TID:15344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:24:36,382 | views | PID:20124 TID:15344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:24:36,382 | views | PID:20124 TID:15344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:25:21,792 | views | PID:28904 TID:5604 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:25:21,823 | views | PID:28904 TID:5604 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:25:21,839 | views | PID:28904 TID:5604 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:25:21,855 | views | PID:28904 TID:5604 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:25:21,870 | views | PID:28904 TID:5604 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:25:21,870 | views | PID:28904 TID:5604 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:25:41,671 | views | PID:24492 TID:11964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:25:41,702 | views | PID:24492 TID:11964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:25:41,702 | views | PID:24492 TID:11964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:25:41,717 | views | PID:24492 TID:11964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:25:41,733 | views | PID:24492 TID:11964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:25:41,749 | views | PID:24492 TID:11964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:25:53,503 | views | PID:13260 TID:27560 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:25:53,532 | views | PID:13260 TID:27560 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:25:53,540 | views | PID:13260 TID:27560 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:25:53,554 | views | PID:13260 TID:27560 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:25:53,565 | views | PID:13260 TID:27560 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:25:53,565 | views | PID:13260 TID:27560 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:26:15,591 | views | PID:27992 TID:33296 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:26:15,622 | views | PID:27992 TID:33296 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:26:15,622 | views | PID:27992 TID:33296 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:26:15,638 | views | PID:27992 TID:33296 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:26:15,654 | views | PID:27992 TID:33296 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:26:15,670 | views | PID:27992 TID:33296 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:30:21,700 | views | PID:27220 TID:25388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:30:21,731 | views | PID:27220 TID:25388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:30:21,739 | views | PID:27220 TID:25388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:30:21,755 | views | PID:27220 TID:25388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:30:21,755 | views | PID:27220 TID:25388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:30:21,771 | views | PID:27220 TID:25388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:32:10,345 | views | PID:27156 TID:27508 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:32:10,376 | views | PID:27156 TID:27508 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:32:10,376 | views | PID:27156 TID:27508 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:32:10,391 | views | PID:27156 TID:27508 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:32:10,407 | views | PID:27156 TID:27508 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:32:10,407 | views | PID:27156 TID:27508 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:33:00,593 | views | PID:19152 TID:11024 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:33:00,623 | views | PID:19152 TID:11024 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:33:00,631 | views | PID:19152 TID:11024 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:33:00,645 | views | PID:19152 TID:11024 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:33:00,651 | views | PID:19152 TID:11024 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:33:00,651 | views | PID:19152 TID:11024 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:33:30,855 | views | PID:12620 TID:2568 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:33:30,898 | views | PID:12620 TID:2568 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:33:30,902 | views | PID:12620 TID:2568 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:33:30,918 | views | PID:12620 TID:2568 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:33:30,933 | views | PID:12620 TID:2568 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:33:55,588 | views | PID:18436 TID:1792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:33:55,611 | views | PID:18436 TID:1792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:33:55,627 | views | PID:18436 TID:1792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:33:55,752 | views | PID:18436 TID:1792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:33:55,762 | views | PID:18436 TID:1792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:33:55,770 | views | PID:18436 TID:1792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:47:26,938 | views | PID:25296 TID:16552 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:47:27,204 | views | PID:25296 TID:16552 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:47:27,565 | views | PID:25296 TID:16552 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:47:27,690 | views | PID:25296 TID:16552 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:47:27,816 | views | PID:25296 TID:16552 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:49:37,675 | views | PID:9200 TID:10992 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:49:37,931 | views | PID:9200 TID:10992 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:49:38,276 | views | PID:9200 TID:10992 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:49:38,402 | views | PID:9200 TID:10992 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:49:38,553 | views | PID:9200 TID:10992 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:54:12,613 | views | PID:19724 TID:23320 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:54:12,892 | views | PID:19724 TID:23320 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:54:13,131 | views | PID:19724 TID:23320 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:54:13,257 | views | PID:19724 TID:23320 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:54:13,395 | views | PID:19724 TID:23320 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:54:13,521 | views | PID:19724 TID:23320 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:57:39,703 | views | PID:20768 TID:7936 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:57:39,964 | views | PID:20768 TID:7936 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:57:40,312 | views | PID:20768 TID:7936 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:57:40,453 | views | PID:20768 TID:7936 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:57:40,579 | views | PID:20768 TID:7936 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 14:58:06,854 | views | PID:28756 TID:20036 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 14:58:07,105 | views | PID:28756 TID:20036 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 14:58:07,453 | views | PID:28756 TID:20036 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 14:58:07,576 | views | PID:28756 TID:20036 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 14:58:07,720 | views | PID:28756 TID:20036 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:02:04,855 | views | PID:27904 TID:25496 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:02:05,123 | views | PID:27904 TID:25496 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:02:05,358 | views | PID:27904 TID:25496 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:02:05,504 | views | PID:27904 TID:25496 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:02:05,635 | views | PID:27904 TID:25496 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:02:44,684 | views | PID:8844 TID:5276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:02:44,962 | views | PID:8844 TID:5276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:02:45,218 | views | PID:8844 TID:5276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:02:45,343 | views | PID:8844 TID:5276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:02:45,479 | views | PID:8844 TID:5276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:02:45,617 | views | PID:8844 TID:5276 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:10:35,186 | views | PID:24840 TID:29472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:10:35,222 | views | PID:24840 TID:29472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:10:35,354 | views | PID:24840 TID:29472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:10:35,373 | views | PID:24840 TID:29472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:10:35,373 | views | PID:24840 TID:29472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:11:24,269 | views | PID:10948 TID:30560 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:11:29,470 | views | PID:13740 TID:27732 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:11:29,495 | views | PID:13740 TID:27732 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:11:29,631 | views | PID:13740 TID:27732 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:11:29,643 | views | PID:13740 TID:27732 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:11:29,656 | views | PID:13740 TID:27732 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:13:24,247 | views | PID:23264 TID:2132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:13:24,281 | views | PID:23264 TID:2132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:13:24,291 | views | PID:23264 TID:2132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:13:24,308 | views | PID:23264 TID:2132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:13:24,321 | views | PID:23264 TID:2132 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:17:12,005 | views | PID:7120 TID:30344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:17:12,040 | views | PID:7120 TID:30344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:17:12,180 | views | PID:7120 TID:30344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:17:12,195 | views | PID:7120 TID:30344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:17:12,212 | views | PID:7120 TID:30344 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:18:41,622 | views | PID:24588 TID:13680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:18:41,925 | views | PID:24588 TID:13680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:18:42,296 | views | PID:24588 TID:13680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:18:42,440 | views | PID:24588 TID:13680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:18:42,586 | views | PID:24588 TID:13680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:18:53,573 | views | PID:3124 TID:25328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:18:53,858 | views | PID:3124 TID:25328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:18:54,248 | views | PID:3124 TID:25328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:18:54,395 | views | PID:3124 TID:25328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:18:54,519 | views | PID:3124 TID:25328 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:19:57,673 | views | PID:4024 TID:23472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:19:58,089 | views | PID:4024 TID:23472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:19:58,526 | views | PID:4024 TID:23472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:19:58,661 | views | PID:4024 TID:23472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:19:58,801 | views | PID:4024 TID:23472 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:22:20,962 | views | PID:9092 TID:31468 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:22:21,492 | views | PID:9092 TID:31468 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:22:21,624 | views | PID:9092 TID:31468 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:22:21,764 | views | PID:9092 TID:31468 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:22:21,904 | views | PID:9092 TID:31468 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:22:32,532 | views | PID:22276 TID:9952 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:22:32,946 | views | PID:22276 TID:9952 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:22:33,079 | views | PID:22276 TID:9952 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:22:33,219 | views | PID:22276 TID:9952 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:22:33,371 | views | PID:22276 TID:9952 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:22:50,474 | views | PID:27808 TID:32792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:22:50,891 | views | PID:27808 TID:32792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:22:51,030 | views | PID:27808 TID:32792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:22:51,169 | views | PID:27808 TID:32792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:22:51,311 | views | PID:27808 TID:32792 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:23:12,278 | views | PID:27508 TID:30632 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:23:12,695 | views | PID:27508 TID:30632 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:23:12,839 | views | PID:27508 TID:30632 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:23:12,998 | views | PID:27508 TID:30632 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:23:13,141 | views | PID:27508 TID:30632 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:23:31,241 | views | PID:21176 TID:10152 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:23:31,776 | views | PID:21176 TID:10152 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:23:31,916 | views | PID:21176 TID:10152 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:23:32,065 | views | PID:21176 TID:10152 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:23:32,200 | views | PID:21176 TID:10152 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:24:44,360 | views | PID:5028 TID:19672 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:24:44,762 | views | PID:5028 TID:19672 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:24:44,897 | views | PID:5028 TID:19672 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:24:45,040 | views | PID:5028 TID:19672 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:24:45,184 | views | PID:5028 TID:19672 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:25:12,812 | views | PID:25896 TID:4632 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:39:42,193 | views | PID:25320 TID:27928 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:39:42,744 | views | PID:25320 TID:27928 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:39:42,888 | views | PID:25320 TID:27928 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:39:43,038 | views | PID:25320 TID:27928 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:39:43,180 | views | PID:25320 TID:27928 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:40:44,816 | views | PID:8568 TID:14368 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:40:45,350 | views | PID:8568 TID:14368 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:40:45,486 | views | PID:8568 TID:14368 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:40:45,626 | views | PID:8568 TID:14368 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:40:45,763 | views | PID:8568 TID:14368 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:41:41,741 | views | PID:13892 TID:10520 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Creating comment <QueryDict: {'csrfmiddlewaretoken': ['5AsoSwv8zj7QCV0WOoq3vpPWOO4rAYhntDY9i61v2AfyEE6NQShHm4ostXmeKrny'], 'first_name': ['eee'], 'last_name': ['eeeee'], 'email': ['kover1998@mail.ru'], 'message': ['eee']}>
+[INFO] 2022-05-17 15:41:41,756 | views | PID:13892 TID:10520 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:42:18,555 | views | PID:13892 TID:3840 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Creating comment <QueryDict: {'csrfmiddlewaretoken': ['1GKthUYfVH9OvFVMxt3ReXYH6shmPjvEpJgeHuuCoYhwxo1DzXUv5CxdLBz9ZMBP'], 'first_name': ['y'], 'last_name': ['g'], 'email': ['kover1998@bk.ru'], 'message': ['g']}>
+[INFO] 2022-05-17 15:42:18,568 | views | PID:13892 TID:3840 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:50:07,498 | views | PID:600 TID:12936 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Creating comment <QueryDict: {'csrfmiddlewaretoken': ['VQvqqOUC4HUZCRz8EimSaRdM2SqDima6jT1bQoqZxY2HEAFZGMdw1wMiH1IqsPgh'], 'first_name': ['а'], 'last_name': ['а'], 'email': ['kover1998@mail.ru'], 'message': ['а']}>
+[INFO] 2022-05-17 15:50:24,929 | views | PID:3424 TID:20388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:50:25,473 | views | PID:3424 TID:20388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:50:25,603 | views | PID:3424 TID:20388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:50:25,736 | views | PID:3424 TID:20388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:50:25,876 | views | PID:3424 TID:20388 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 15:56:39,528 | views | PID:5056 TID:20428 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 15:56:40,027 | views | PID:5056 TID:20428 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 15:56:40,145 | views | PID:5056 TID:20428 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 15:56:40,304 | views | PID:5056 TID:20428 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 15:56:40,448 | views | PID:5056 TID:20428 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 16:01:36,790 | views | PID:600 TID:27288 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 16:01:37,569 | views | PID:600 TID:27288 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 16:01:39,615 | views | PID:600 TID:27288 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 16:01:40,808 | views | PID:600 TID:27288 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_product_info/zhevatelnaia-rezinka-dirol_61 | Getting product page - Жевательная Резинка Dirol
+[INFO] 2022-05-17 16:01:54,545 | views | PID:600 TID:15520 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 16:01:55,416 | views | PID:600 TID:15520 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 16:01:57,392 | views | PID:600 TID:15520 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 16:02:00,177 | views | PID:600 TID:15520 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:02:04,675 | views | PID:600 TID:15520 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:02:06,047 | views | PID:600 TID:15520 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:02:07,616 | views | PID:600 TID:15520 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:02:08,295 | views | PID:600 TID:15520 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:02:10,288 | views | PID:600 TID:15520 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:02:57,358 | views | PID:20384 TID:9160 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 16:02:59,674 | views | PID:20384 TID:9160 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:03:02,041 | views | PID:20384 TID:9160 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 16:03:03,600 | views | PID:20384 TID:9160 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-05-17 16:03:05,693 | views | PID:20384 TID:9160 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 16:03:06,579 | views | PID:20384 TID:9160 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/zhevatelnaia-rezinka-dirol_61 | Getting product page - Жевательная Резинка Dirol
+[INFO] 2022-05-17 16:08:53,716 | views | PID:15380 TID:22148 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 16:09:03,014 | views | PID:15380 TID:22148 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 16:09:07,478 | views | PID:15380 TID:22148 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 16:09:10,959 | views | PID:15380 TID:22148 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 16:09:19,178 | views | PID:15380 TID:22148 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 16:10:52,109 | views | PID:20308 TID:15516 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 16:10:59,351 | views | PID:20308 TID:15516 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
