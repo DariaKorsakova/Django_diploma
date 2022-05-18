@@ -23,9 +23,11 @@ SECRET_KEY = 'django-insecure-p0++2p6*#9_#apjl1j8c(bb5$dexq+@c9sz+*w-3p1vh9e04j=
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+# работает со всеми ip адресами
 ALLOWED_HOSTS = ['*']
 
+
+CSRF_TRUSTED_ORIGINS = ['http://*.127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [

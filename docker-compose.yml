@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/django_app
+    ports:
+      - "8000:8000"
+#  sqlite3:
+#    image: nouchka/sqlite3:latest
+#    volumes:
+#      #Modify following line
+#      - ./:./shop/db.sqlite3
+#    ports:
+#      - '8000:8000' # expose ports - HOST:CONTAINER
+
+  nginx:
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+    volumes:
+      - ./static/:/static
+      - ./media/:/media

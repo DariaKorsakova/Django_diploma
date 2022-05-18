@@ -345,3 +345,87 @@ Getting products from df
 [INFO] 2022-05-17 16:09:19,178 | views | PID:15380 TID:22148 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
 [INFO] 2022-05-17 16:10:52,109 | views | PID:20308 TID:15516 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
 [INFO] 2022-05-17 16:10:59,351 | views | PID:20308 TID:15516 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-05-17 23:25:17,397 | views | PID:11 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 23:29:19,831 | views | PID:13 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 23:29:36,695 | views | PID:13 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 23:29:37,897 | views | PID:13 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 23:29:39,801 | views | PID:13 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 23:29:48,813 | views | PID:13 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 23:32:53,333 | views | PID:15 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 23:34:03,421 | views | PID:15 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 23:34:07,212 | views | PID:15 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 23:34:39,078 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 23:43:59,383 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-05-17 23:44:19,989 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-05-17 23:44:20,017 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /about | Getting about page
+[INFO] 2022-05-17 23:44:25,187 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /products | Getting products from df
+[INFO] 2022-05-17 23:44:27,516 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /show_product_info/zhevatelnaia-rezinka-dirol_61 | Getting product page - Жевательная Резинка Dirol
+[INFO] 2022-05-17 23:44:27,564 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /show_product_info/zhevatelnaia-rezinka-dirol_61 | Getting product page - Жевательная Резинка Dirol
+[INFO] 2022-05-17 23:44:32,006 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 23:44:39,787 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 23:44:39,822 | views | PID:17 TID:140377225746240 | Username AnonymousUser UserIP: 172.23.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-17 23:44:41,647 | views | PID:17 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: / | Getting index page
+[INFO] 2022-05-17 23:45:23,245 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /create_vacancy | Creating vacancy <QueryDict: {'csrfmiddlewaretoken': ['ZAMuBoxlg7hXZqxXq0DlXk7GzIKgLWxx3Lf7HE29zGW2GWhOnrJmk4lqUOSufDZr'], 'name': ['Бухгалтер'], 'description': ['Бухгалтер нужен очень'], 'conditions': ['2'], 'requirements': ['5']}>
+[INFO] 2022-05-17 23:45:23,360 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 23:45:26,686 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 23:45:26,742 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 23:45:28,973 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 23:45:29,030 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 23:45:30,043 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-17 23:45:31,034 | views | PID:19 TID:140377225746240 | Username admin UserIP: 172.23.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-18 00:12:06,968 | views | PID:10 TID:139661152847680 | Username admin UserIP: 172.28.0.1 | Path: / | Getting index page
+[INFO] 2022-05-18 00:13:05,183 | views | PID:10 TID:139661152847680 | Username admin UserIP: 172.28.0.1 | Path: / | Getting index page
+[INFO] 2022-05-18 00:13:05,227 | views | PID:10 TID:139661152847680 | Username admin UserIP: 172.28.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:13:48,715 | views | PID:12 TID:139661152847680 | Username admin UserIP: 172.28.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:13:48,847 | views | PID:12 TID:139661152847680 | Username admin UserIP: 172.28.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:13:56,039 | views | PID:12 TID:139661152847680 | Username AnonymousUser UserIP: 172.28.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:14:01,369 | views | PID:12 TID:139661152847680 | Username AnonymousUser UserIP: 172.28.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:23:49,810 | views | PID:14 TID:139661152847680 | Username AnonymousUser UserIP: 172.28.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:23:50,706 | views | PID:14 TID:139661152847680 | Username AnonymousUser UserIP: 172.28.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:24:46,340 | views | PID:12 TID:139810408318784 | Username AnonymousUser UserIP: 172.29.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:25:12,804 | views | PID:12 TID:139810408318784 | Username AnonymousUser UserIP: 172.29.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:26:30,636 | views | PID:12 TID:139810408318784 | Username AnonymousUser UserIP: 172.29.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:26:31,485 | views | PID:12 TID:139810408318784 | Username AnonymousUser UserIP: 172.29.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:26:36,215 | views | PID:12 TID:139810408318784 | Username AnonymousUser UserIP: 172.29.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:27:02,585 | views | PID:22 TID:139810408318784 | Username admin UserIP: 172.29.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:27:04,990 | views | PID:22 TID:139810408318784 | Username AnonymousUser UserIP: 172.29.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:27:48,789 | views | PID:11 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:27:52,484 | views | PID:11 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:27:59,836 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:55:16,327 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:55:19,215 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 00:55:22,071 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 00:55:23,177 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 00:55:29,208 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:55:32,413 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 00:55:33,909 | views | PID:11 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /show_product_info/zhevatelnaia-rezinka-dirol_61 | Getting product page - Жевательная Резинка Dirol
+[INFO] 2022-05-18 00:55:43,232 | views | PID:11 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:56:19,951 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.1 | Path: / | Getting index page
+[INFO] 2022-05-18 00:56:20,055 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:56:20,070 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:56:26,192 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 00:56:31,520 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /about | Getting about page
+[INFO] 2022-05-18 00:56:35,395 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-18 00:56:35,442 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-18 00:56:37,753 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-05-18 00:56:40,771 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 00:56:48,474 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:56:56,859 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:57:01,746 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 00:57:36,251 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.1 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:57:40,752 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:57:41,200 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /login | Getting login page
+[INFO] 2022-05-18 00:57:44,771 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 00:57:49,706 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 01:02:31,829 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /comments | Getting comments page
+[INFO] 2022-05-18 01:02:36,603 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /about | Getting about page
+[INFO] 2022-05-18 01:04:00,050 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /create_product | Creating product <QueryDict: {'csrfmiddlewaretoken': ['hWMN153yAmQ6zcibb115QlVDgb3yOuvwJlx6DoRmaObkhXyzLMgxveEHGq7oIq6f'], 'category': ['16'], 'name': ['Сок'], 'description': ['Сок добрый'], 'price': ['100']}>
+[INFO] 2022-05-18 01:04:55,815 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /create_product | Creating product <QueryDict: {'csrfmiddlewaretoken': ['DLUdqwIB3w1PZgGoM8zImNPNr3rFurGg5aFw2PwpDYm3H1WMmTOa1GyRRivvonhZ'], 'category': ['16'], 'name': ['Сок Добрый'], 'description': ['Сок добрый'], 'price': ['100']}>
+[INFO] 2022-05-18 01:04:55,877 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 01:05:01,462 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['tmedBPlpFP4H6L47OJ0i2KQhWJhO1ffVVLZwd89dfhpVOwkvoufKHDzlmYlEVbQE'], 'src': ['сок']}>  from df
+[INFO] 2022-05-18 01:05:01,486 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 01:05:52,144 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /show_product_info/sok-dobryi_61 | Getting product page - Сок Добрый
+[INFO] 2022-05-18 01:05:54,182 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /show_product_info/sok-dobryi_61/delete | Deleting product <QueryDict: {'csrfmiddlewaretoken': ['Jv89rWPo5wC5xcEEobR3lXnVZ9Y3HQ5WbUTs3fDcFYXjfXU2YW6v0Q6Zpo2TBMGF']}>
+[INFO] 2022-05-18 01:05:54,209 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 01:12:35,607 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 01:12:41,901 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
