@@ -11,13 +11,8 @@
                     Все категории
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    {% if not slug%}
-                    <li><a href="{% url 'gastronom:products'%}"
-                           class="dropdown-item disabled">Вся продукция</a>
-                        {% else %}
                     <li><a href="{% url 'gastronom:products'%}"
                            class="dropdown-item">Вся продукция</a>
-                        {% endif %}
                         {% for category in categories %}
                         {% if slug == category.slug %}
                     <li><a href="{% url 'gastronom:show_category' category.slug %}"

@@ -7,6 +7,7 @@ from django.views.generic import ListView, CreateView, DetailView, DeleteView, U
 from .models import Product, Category, Vacancies, Comments, VacancyConditions, VacancyRequirements
 from .form import ProductForm, LoginUserForm, CommentForm, VacancyForm
 from .utils import ContextMixin, UserData
+from unidecode import unidecode
 
 # для каждой вьюхи свой класс
 logger = logging.getLogger('main')
@@ -54,7 +55,7 @@ class ProductIndex(ContextMixin, UserData, ListView):
     model = Product
     # с каким шаблоном
     template_name = 'gastronom/products.html'
-    # название словаря, где будут все объекты из модели
+    # название словаря, где будут все поля из модели
     context_object_name = 'products'
     # сколько объектов на странице
     paginate_by = 3
@@ -64,27 +65,24 @@ class ProductIndex(ContextMixin, UserData, ListView):
         context = super().get_context_data()
         user_context = self.get_user_context(title='Доступные товары')
         context.update(user_context)
-        print(context)
         return context
 
     def get_queryset(self):
         # Сделать жадный запрос чтобы запоминалось и ускорилось полученик категорий
         queryset = ProductIndex.model.objects.all().order_by('name', 'price').select_related('category')
         logger.info('Getting products from df', extra=self.get_user_data())
-        if self.request.GET.keys():
-            # Check the search keyword
-            if self.request.GET.get('src') != '':
-                keyword = self.request.GET.get('src')
-                if keyword is not None:
-                    # Set the query set based on search keyword
-                    queryset = Product.objects.filter(name__icontains=keyword.capitalize()).order_by(
-                        'name').select_related('category')
+        # Check the search keyword
+        keyword = self.request.GET.get('src')
+        if keyword is not None:
+            # Set the query set based on search keyword
+            queryset = Product.objects.filter(name__icontains=keyword.capitalize()).order_by(
+                    'name').select_related('category')
         return queryset
 
     def get(self, request, *args, **kwargs):
         keyword = self.request.GET.get('src')
         if keyword is not None:
-            logger.info(f'Searching product {self.request.GET}  from df', extra=self.get_user_data())
+            logger.info(f'Searching product {unidecode(keyword)} from df', extra=self.get_user_data())
         return super().get(self, request, *args, **kwargs)
 
 
@@ -121,7 +119,7 @@ class ShowProduct(ContextMixin, UserData, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
         product = context['product']
-        logger.info(f'Getting product page - {product}', extra=self.get_user_data())
+        logger.info(f'Getting product page - {unidecode(product.name)}', extra=self.get_user_data())
         user_context = self.get_user_context(title=f"Детальная информация о {product}")
         context.update(user_context)
         return context
@@ -144,7 +142,7 @@ class ShowCategory(ContextMixin, UserData, ListView):
     def get_queryset(self):
         cat = self.kwargs['category_slug']
         logger.info(f'Getting products from special category - {cat}', extra=self.get_user_data())
-        queryset = ShowCategory.model.objects.filter(category__slug=self.kwargs['category_slug']).order_by(
+        queryset = ShowCategory.model.objects.filter(category__slug=cat).order_by(
             'name')
         return queryset
 
@@ -173,7 +171,7 @@ class ShowVacancy(ContextMixin, UserData, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
         vac = context['vacancies']
-        logger.info(f'Getting vacancies page - {vac} ', extra=self.get_user_data())
+        logger.info(f'Getting vacancies page - {unidecode(vac.name)} ', extra=self.get_user_data())
         conditions = VacancyConditions.objects.filter(vacancies__id=vac.id)
         requirements = VacancyRequirements.objects.filter(vacancies__id=vac.id)
         user_context = self.get_user_context(title=f"Детальная информация о вакансии - {vac}",
@@ -195,6 +193,7 @@ class CommentCreate(ContextMixin, UserData, CreateView):
     def get_context_data(self, **kwargs):
         # у родителя выполнить, чтобы заполнить контекст
         context = super().get_context_data(**kwargs)
+        logger.info(f'Getting comment page ', extra=self.get_user_data())
         user_context = self.get_user_context(title='Обратная связь', button='Отправить сообщение')
         context.update(user_context)
         return context
@@ -245,7 +244,6 @@ class CommentsIndex(ContextMixin, UserData, LoginRequiredMixin, ListView):
 class ShowComment(ContextMixin, LoginRequiredMixin, DetailView):
     model = Comments
     template_name = 'gastronom/show_comment.html'
-    # переменная на которую нужно смотреть
     raise_exception = True
 
     def get_context_data(self, **kwargs):
@@ -258,7 +256,6 @@ class ShowComment(ContextMixin, LoginRequiredMixin, DetailView):
 class ProductDeleteView(ContextMixin, LoginRequiredMixin, UserData, DeleteView):
     model = Product
     template_name = 'gastronom/product_delete.html'
-    # переменная на которую нужно смотреть
     slug_url_kwarg = 'product_slug'
     raise_exception = True
 

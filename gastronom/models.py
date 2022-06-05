@@ -17,15 +17,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-    # Описаны
-    # поля
-    # модели
-    # с
-    # типами
-    # данных
-
 
 class Product(models.Model):
+    # Описаны поля модели С ТИПАМИ ДААННЫХ
     objects = models.Manager()
     name = models.CharField('Название', max_length=50, null=False)
     # внешние ключи, нельзя удалить пока есть товары в категории
@@ -37,6 +31,7 @@ class Product(models.Model):
     slug = models.SlugField('URL товара', max_length=50, unique=True, db_index=True)
 
     class Meta:
+        # подробное имя для класса в единственной и множественной форме
         verbose_name = 'Товар'
         verbose_name_plural = "Товары"
 
@@ -53,10 +48,10 @@ class Product(models.Model):
         return super().save(*args, **kwargs)
 
     def get_absolute_url(self):
+        # просмотр на сайте опредленного объекта из редактирования
         return reverse('gastronom:show_product', kwargs={'product_slug': self.slug})
 
     # замена названия объектов на названия товаров(строковое представления объекта)
-
     def __str__(self):
         return self.name
 

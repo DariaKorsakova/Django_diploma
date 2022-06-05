@@ -429,3 +429,123 @@ Getting products from df
 [INFO] 2022-05-18 01:05:54,209 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
 [INFO] 2022-05-18 01:12:35,607 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
 [INFO] 2022-05-18 01:12:41,901 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 09:44:21,374 | views | PID:13 TID:140511679362880 | Username admin UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 09:50:21,270 | views | PID:13 TID:140511679362880 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 09:57:00,485 | views | PID:11 TID:140661786605376 | Username admin UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 09:57:11,743 | views | PID:11 TID:140661786605376 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 09:58:33,208 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 10:15:48,761 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.1 | Path: / | Getting index page
+[INFO] 2022-05-18 10:15:50,722 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 10:19:29,820 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /contact_us | Creating comment <QueryDict: {'csrfmiddlewaretoken': ['V6fPBIM7ETUuVAaQk9wPR1bU9u5A6Dn5INDqRXSnwqfn3BRjeW81fxvbUFNwMRCQ'], 'first_name': ['РћР»РµРі'], 'last_name': ['Р РѕРґРѕРІ'], 'email': ['123@mail.ru'], 'message': ['РћС‚Р»РёС‡РЅС‹Р№ РјР°РіР°Р·РёРЅ, Р·Р°С…РѕРґРёС‚Рµ С‚СѓРґР°']}>
+[INFO] 2022-05-18 10:19:29,894 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 10:20:00,701 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 10:20:04,890 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 10:20:07,029 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 10:20:09,240 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 10:20:12,762 | views | PID:12 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 10:26:06,574 | views | PID:14 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.1 | Path: / | Getting index page
+[INFO] 2022-05-18 10:26:06,670 | views | PID:14 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /products | Getting products from df
+[INFO] 2022-05-18 10:26:06,749 | views | PID:14 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-05-18 10:26:06,846 | views | PID:14 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: / | Getting index page
+[INFO] 2022-05-18 10:26:06,873 | views | PID:14 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-05-18 10:26:16,987 | views | PID:14 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-05-18 10:26:49,999 | views | PID:14 TID:140237462361920 | Username AnonymousUser UserIP: 172.30.0.3 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-06-03 21:43:52,846 | views | PID:15972 TID:78680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-03 21:44:11,584 | views | PID:15972 TID:78680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-06-03 21:44:29,698 | views | PID:15972 TID:78680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-03 21:44:31,955 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-06-03 21:44:35,166 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-06-03 21:44:54,210 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-06-03 21:45:02,109 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-03 21:45:04,622 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-03 21:45:06,323 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_vacancy_info/rabotnik-na-sklad_8 | Getting vacancies page - Работник на склад 
+[INFO] 2022-06-03 21:45:10,425 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-03 21:45:12,151 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-03 21:45:27,848 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-03 21:45:32,552 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_product_info/vetchina-viazanka-stolichnaia-500g_38 | Getting product page - Ветчина Вязанка Столичная 500г
+[INFO] 2022-06-03 21:45:36,595 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-03 21:45:41,573 | views | PID:15972 TID:79736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/ryba | Getting products from special category - ryba
+[INFO] 2022-06-03 21:45:46,563 | views | PID:15972 TID:78680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-06-03 21:45:52,579 | views | PID:15972 TID:78680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_product_info/moloko-pasterizovannoe-32-severnaia-dolina_61 | Getting product page - Молоко пастеризованное 3,2% "Северная Долина"
+[INFO] 2022-06-03 21:45:56,950 | views | PID:15972 TID:78680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-06-03 21:45:59,192 | views | PID:15972 TID:78680 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-06-04 18:40:58,259 | views | PID:15972 TID:76176 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 07:53:57,409 | views | PID:88304 TID:19072 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 08:04:50,123 | views | PID:83244 TID:83820 | Username admin UserIP: 127.0.0.1 | Path: /show_product_info/moloko-pasterizovannoe-32-severnaia-dolina_61 | Getting product page - Молоко пастеризованное 3,2% "Северная Долина"
+[INFO] 2022-06-05 08:38:38,251 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /show_category/kolbasy | Getting products from special category - kolbasy
+[INFO] 2022-06-05 08:38:41,966 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:38:47,468 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['9zjEZVA5su4dzq3ddlcq72WBcXSaIFkKzGQMZfYwQpJcHYfMv1phv1nGzw7mRUYK'], 'src': ['молоко']}>  from df
+[INFO] 2022-06-05 08:38:47,480 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:40:10,985 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['FseictIiBO6yY6pMn8vIVGYMHBbgIABo5zLqcN6JZJLx6EBlFOIzjFpR4aqsRPfo'], 'src': ['бел']}>  from df
+[INFO] 2022-06-05 08:40:10,990 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:40:15,472 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['zI03Poazgu1lNJ5hRPcE5ZRyZJbQ3EmMZPxbPIy0EpGkVhhQ9vpvtYiDmiq2cT0M'], 'src': ['белочка']}>  from df
+[INFO] 2022-06-05 08:40:15,478 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:40:19,269 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['3ebF5idk4VCm47CCfQxmKPtl70ak6Ce0tlIN5CBLsQhlcFObxwKd8OUquzpwfRS0'], 'src': ['творог']}>  from df
+[INFO] 2022-06-05 08:40:19,272 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:40:22,009 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product <QueryDict: {'csrfmiddlewaretoken': ['CrFW1EmVDTktczPWtPBWPkfRToCFP03s2yc41YKm1OZsk71vLvONdjGWgXRRYfHs'], 'src': ['сыр']}>  from df
+[INFO] 2022-06-05 08:40:22,016 | views | PID:81024 TID:79496 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:41:43,685 | views | PID:88756 TID:15972 | Username admin UserIP: 127.0.0.1 | Path: /show_category/myaso | Getting products from special category - myaso
+[INFO] 2022-06-05 08:41:45,731 | views | PID:88756 TID:15972 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:41:48,462 | views | PID:88756 TID:15972 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product молоко  from df
+[INFO] 2022-06-05 08:41:48,467 | views | PID:88756 TID:15972 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:42:00,500 | views | PID:88756 TID:15972 | Username admin UserIP: 127.0.0.1 | Path: /products | Searching product moloko  from df
+[INFO] 2022-06-05 08:42:00,506 | views | PID:88756 TID:15972 | Username admin UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:45:20,917 | views | PID:84180 TID:73816 | Username admin UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-06-05 08:45:26,162 | views | PID:84180 TID:73816 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 08:45:28,402 | views | PID:84180 TID:73816 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/specii | Getting products from special category - specii
+[INFO] 2022-06-05 08:46:16,626 | views | PID:88516 TID:88788 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_product_info/priprava-dlia-kuritsy_51 | Getting product page - Priprava dlia kuritsy
+[INFO] 2022-06-05 08:47:05,225 | views | PID:88516 TID:88788 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:47:09,363 | views | PID:88516 TID:88788 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product moloko  from df
+[INFO] 2022-06-05 08:47:09,365 | views | PID:88516 TID:88788 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:49:52,341 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_category/specii | Getting products from special category - specii
+[INFO] 2022-06-05 08:52:42,130 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:53:09,548 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:53:13,083 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Searching product moloko from df
+[INFO] 2022-06-05 08:53:13,083 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:53:14,975 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:53:18,008 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:53:34,897 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 08:53:37,207 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-06-05 08:53:51,776 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:53:53,686 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_product_info/zhevatelnaia-rezinka-dirol_61 | Getting product page - Zhevatel'naia Rezinka Dirol
+[INFO] 2022-06-05 08:53:57,744 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 08:54:09,743 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-06-05 08:54:27,266 | views | PID:64612 TID:61964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 08:55:23,726 | views | PID:81884 TID:86072 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /show_vacancy_info/prodavets-prodovolstvennykh-tovarov_8 | Getting vacancies page - Prodavets prodovol'stvennykh tovarov 
+[INFO] 2022-06-05 08:55:38,014 | views | PID:81884 TID:86072 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 08:55:40,709 | views | PID:81884 TID:86072 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 08:55:42,517 | views | PID:81884 TID:86072 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 08:55:44,309 | views | PID:81884 TID:86072 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 08:55:46,178 | views | PID:81884 TID:86072 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 08:56:49,188 | views | PID:82176 TID:89176 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contact_us | Getting comment page 
+[INFO] 2022-06-05 09:39:49,275 | views | PID:87384 TID:85112 | Username admin UserIP: 127.0.0.1 | Path: /contact_us | Getting comment page 
+[INFO] 2022-06-05 09:39:51,169 | views | PID:87384 TID:85112 | Username admin UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 09:39:53,444 | views | PID:87384 TID:85112 | Username admin UserIP: 127.0.0.1 | Path: /show_category/kolbasy | Getting products from special category - kolbasy
+[INFO] 2022-06-05 09:39:59,527 | views | PID:87384 TID:85112 | Username admin UserIP: 127.0.0.1 | Path: /show_category/zamorozka | Getting products from special category - zamorozka
+[INFO] 2022-06-05 09:40:04,502 | views | PID:87384 TID:85112 | Username admin UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-06-05 09:55:37,531 | views | PID:87384 TID:88344 | Username admin UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-06-05 09:55:40,341 | views | PID:87384 TID:88344 | Username admin UserIP: 127.0.0.1 | Path: /show_category/molochnye-produkty | Getting products from special category - molochnye-produkty
+[INFO] 2022-06-05 10:05:49,095 | views | PID:87384 TID:83216 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 10:47:38,501 | views | PID:87384 TID:14152 | Username admin UserIP: 127.0.0.1 | Path: /comments | Getting comments page
+[INFO] 2022-06-05 11:19:08,229 | views | PID:89464 TID:77448 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-06-05 11:19:08,646 | views | PID:89464 TID:77448 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-06-05 11:19:08,782 | views | PID:89464 TID:77448 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 11:19:08,919 | views | PID:89464 TID:77448 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-06-05 11:19:09,062 | views | PID:89464 TID:77448 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 11:19:09,198 | views | PID:89464 TID:77448 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 11:19:43,367 | views | PID:86024 TID:82240 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-06-05 11:19:43,772 | views | PID:86024 TID:82240 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-06-05 11:19:43,914 | views | PID:86024 TID:82240 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 11:19:44,057 | views | PID:86024 TID:82240 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-06-05 11:19:44,199 | views | PID:86024 TID:82240 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 11:19:44,336 | views | PID:86024 TID:82240 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /vacancies | Getting vacancies page 
+[INFO] 2022-06-05 11:21:20,239 | views | PID:30240 TID:88964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-06-05 11:21:20,664 | views | PID:30240 TID:88964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-06-05 11:21:20,820 | views | PID:30240 TID:88964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 11:21:20,986 | views | PID:30240 TID:88964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-06-05 11:21:21,166 | views | PID:30240 TID:88964 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
+[INFO] 2022-06-05 11:21:37,747 | views | PID:86024 TID:70736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /about | Getting about page
+[INFO] 2022-06-05 11:21:38,164 | views | PID:86024 TID:70736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /contacts | Getting contacts page
+[INFO] 2022-06-05 11:21:38,309 | views | PID:86024 TID:70736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: / | Getting index page
+[INFO] 2022-06-05 11:21:38,464 | views | PID:86024 TID:70736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /login | Getting login page
+[INFO] 2022-06-05 11:21:38,623 | views | PID:86024 TID:70736 | Username AnonymousUser UserIP: 127.0.0.1 | Path: /products | Getting products from df
